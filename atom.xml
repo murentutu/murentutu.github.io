@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>murentutu</title>
   
-  
+  <subtitle>努力学习机器学习的小白</subtitle>
   <link href="https://murentutu.github.io/atom.xml" rel="self"/>
   
   <link href="https://murentutu.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://murentutu.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>murentutu</name>
     
   </author>
   
