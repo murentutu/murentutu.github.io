@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://murentutu.github.io/murentutu.github.io/atom.xml" rel="self"/>
+  <link href="https://github.com/murentutu/murentutu.github.io/atom.xml" rel="self"/>
   
-  <link href="http://murentutu.github.io/murentutu.github.io/"/>
+  <link href="https://github.com/murentutu/murentutu.github.io/"/>
   <updated>1985-10-26T08:15:00.000Z</updated>
-  <id>http://murentutu.github.io/murentutu.github.io/</id>
+  <id>https://github.com/murentutu/murentutu.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://murentutu.github.io/murentutu.github.io/2021/10/15/hello-world/"/>
-    <id>http://murentutu.github.io/murentutu.github.io/2021/10/15/hello-world/</id>
+    <link href="https://github.com/murentutu/murentutu.github.io/2021/10/15/hello-world/"/>
+    <id>https://github.com/murentutu/murentutu.github.io/2021/10/15/hello-world/</id>
     <published>2021-10-15T11:52:29.284Z</published>
     <updated>1985-10-26T08:15:00.000Z</updated>
     
