@@ -6,7 +6,7 @@
   <link href="https://murentutu.github.io/atom.xml" rel="self"/>
   
   <link href="https://murentutu.github.io/"/>
-  <updated>2021-10-15T15:56:33.756Z</updated>
+  <updated>2021-10-16T09:18:10.335Z</updated>
   <id>https://murentutu.github.io/</id>
   
   <author>
@@ -17,43 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://murentutu.github.io/2021/10/16/index/"/>
-    <id>https://murentutu.github.io/2021/10/16/index/</id>
-    <published>2021-10-15T16:06:05.144Z</published>
-    <updated>2021-10-15T15:56:33.756Z</updated>
+    <title>初等数学</title>
+    <link href="https://murentutu.github.io/2021/10/16/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    <id>https://murentutu.github.io/2021/10/16/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/</id>
+    <published>2021-10-16T08:24:45.000Z</published>
+    <updated>2021-10-16T09:18:10.335Z</updated>
     
-    <content type="html"><![CDATA[<p>测试测试测试测试测试</p>]]></content>
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h4 id="1-1-函数"><a href="#1-1-函数" class="headerlink" title="1.1 函数"></a>1.1 函数</h4><ol><li><p>函数的性质：有界性，单调性，奇偶性，周期性</p></li><li><p>特殊函数：</p><ul><li>相等函数：定义域相等以及对应关系相等的函数</li><li><strong>满射函数</strong>：如果每个可能的像至少有一个变量映射其上（即像集合B中的每个元素在A中都有一个或一个以上的原像），或者说陪域任何元素都有至少有一个变量与之对应。</li><li><strong>单射函数</strong>：设f是由集合A到集合B的映射，如果所有x,y∈A,且x≠y，都有f(x)≠f(y),则称f为由A到B的单射。</li><li><strong>双射函数</strong>：单射和双射都成立。</li></ul></li><li><p>复合函数和反函数</p><p>反函数性质：两函数关于直线y = x对称，在其相应区间有相同的单调性，反函数相互且具有唯一性。</p><hr><p>ps:符号变量：用于符号计算的变量，可利用Python的Sympy包中的函数Symbol定义符号变量</p></li></ol><h4 id="1-2-数列"><a href="#1-2-数列" class="headerlink" title="1.2 数列"></a>1.2 数列</h4><p>按项数分：有穷、无穷</p><p>按大小关系分：递增、递减、常数</p><p>按变化规律：等差、等比</p><h4 id="1-3-排列和组合"><a href="#1-3-排列和组合" class="headerlink" title="1.3 排列和组合"></a>1.3 排列和组合</h4><ul><li>排列：<img src="https://bkimg.cdn.bcebos.com/formula/ac0926e610dce08b12a0c0c42b835cb0.svg" alt="img"></li><li>组合：<img src="https://bkimg.cdn.bcebos.com/formula/620a7d43cbc2c75ca47802b017929910.svg" alt="img"></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;测试测试测试测试测试&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h4 id=&quot;1-1-函数&quot;&gt;&lt;a href=&quot;#1-1-函数&quot; class=&quot;headerlink&quot; title=&quot;1.1 函数&quot;&gt;&lt;/a&gt;1.1 函数&lt;/h</summary>
       
     
     
     
+    <category term="人工智能数学基础" scheme="https://murentutu.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="AI学习" scheme="https://murentutu.github.io/tags/AI%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://murentutu.github.io/2021/10/15/hello-world/"/>
-    <id>https://murentutu.github.io/2021/10/15/hello-world/</id>
-    <published>2021-10-15T11:52:29.284Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <title>hello</title>
+    <link href="https://murentutu.github.io/2021/10/16/hello/"/>
+    <id>https://murentutu.github.io/2021/10/16/hello/</id>
+    <published>2021-10-16T07:58:22.000Z</published>
+    <updated>2021-10-16T08:22:30.627Z</updated>
     
     
     
+    
+    
+    <category term="测试" scheme="https://murentutu.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   

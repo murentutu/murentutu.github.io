@@ -186,6 +186,7 @@ code {
   transition: 0.3s;
   text-transform: upperCase;
   letter-spacing: 1px;
+  display: block;
 }
 .post .post-cat a:hover {
   color: #777;
