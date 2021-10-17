@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>murentutu</title>
   
-  <subtitle>努力学习机器学习的小白</subtitle>
+  <subtitle>Every day is a chance to learn something new.</subtitle>
   <link href="https://murentutu.github.io/atom.xml" rel="self"/>
   
   <link href="https://murentutu.github.io/"/>
-  <updated>2021-10-16T16:06:09.678Z</updated>
+  <updated>2021-10-17T04:19:06.789Z</updated>
   <id>https://murentutu.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://murentutu.github.io/2021/10/16/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
     <id>https://murentutu.github.io/2021/10/16/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/</id>
     <published>2021-10-16T08:24:45.000Z</published>
-    <updated>2021-10-16T16:06:09.678Z</updated>
+    <updated>2021-10-17T04:19:06.789Z</updated>
     
-    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h4 id="1-1-函数"><a href="#1-1-函数" class="headerlink" title="1.1 函数"></a>1.1 函数</h4><ol><li><p>函数的性质：有界性，单调性，奇偶性，周期性</p></li><li><p>特殊函数：</p><ul><li>相等函数：定义域相等以及对应关系相等的函数</li><li><strong>满射函数</strong>：如果每个可能的像至少有一个变量映射其上（即像集合B中的每个元素在A中都有一个或一个以上的原像），或者说陪域任何元素都有至少有一个变量与之对应。</li><li><strong>单射函数</strong>：设f是由集合A到集合B的映射，如果所有x,y∈A,且x≠y，都有f(x)≠f(y),则称f为由A到B的单射。</li><li><strong>双射函数</strong>：单射和双射都成立。</li></ul></li><li><p>复合函数和反函数</p><p>反函数性质：两函数关于直线y = x对称，在其相应区间有相同的单调性，反函数相互且具有唯一性。</p><hr><p>ps:符号变量：用于符号计算的变量，可利用Python的Sympy包中的函数Symbol定义符号变量</p></li></ol><h4 id="1-2-数列"><a href="#1-2-数列" class="headerlink" title="1.2 数列"></a>1.2 数列</h4><p>按项数分：有穷、无穷</p><p>按大小关系分：递增、递减、常数</p><p>按变化规律：等差、等比</p><h4 id="1-3-排列和组合"><a href="#1-3-排列和组合" class="headerlink" title="1.3 排列和组合"></a>1.3 排列和组合</h4><ul><li>排列：<img src="https://bkimg.cdn.bcebos.com/formula/ac0926e610dce08b12a0c0c42b835cb0.svg" alt="img"></li><li>组合：<img src="https://bkimg.cdn.bcebos.com/formula/620a7d43cbc2c75ca47802b017929910.svg" alt="img"></li><li><a href="https://imgtu.com/i/5Jy3uR">https://imgtu.com/i/5Jy3uR</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h4 id="1-1-函数"><a href="#1-1-函数" class="headerlink" title="1.1 函数"></a>1.1 函数</h4><ol><li><p>函数的性质：有界性，单调性，奇偶性，周期性</p></li><li><p>特殊函数：</p><ul><li>相等函数：定义域相等以及对应关系相等的函数</li><li><strong>满射函数</strong>：如果每个可能的像至少有一个变量映射其上（即像集合B中的每个元素在A中都有一个或一个以上的原像），或者说陪域任何元素都有至少有一个变量与之对应。</li><li><strong>单射函数</strong>：设f是由集合A到集合B的映射，如果所有x,y∈A,且x≠y，都有f(x)≠f(y),则称f为由A到B的单射。</li><li><strong>双射函数</strong>：单射和双射都成立。</li></ul></li><li><p>复合函数和反函数</p><p>反函数性质：两函数关于直线y = x对称，在其相应区间有相同的单调性，反函数相互且具有唯一性。</p><hr><p>ps:符号变量：用于符号计算的变量，可利用Python的Sympy包中的函数Symbol定义符号变量</p></li></ol><h4 id="1-2-数列"><a href="#1-2-数列" class="headerlink" title="1.2 数列"></a>1.2 数列</h4><p>按项数分：有穷、无穷</p><p>按大小关系分：递增、递减、常数</p><p>按变化规律：等差、等比</p><h4 id="1-3-排列和组合"><a href="#1-3-排列和组合" class="headerlink" title="1.3 排列和组合"></a>1.3 排列和组合</h4><ul><li>排列：<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/ac0926e610dce08b12a0c0c42b835cb0.svg" alt="img"></li><li>组合：<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/620a7d43cbc2c75ca47802b017929910.svg" alt="img"></li></ul>]]></content>
     
     
       
