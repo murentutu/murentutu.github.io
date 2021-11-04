@@ -157,6 +157,24 @@
     System.out.println(&quot;Set集合的大小为:&quot;+size);  //将集合大小输出
 &#125;
 </code></pre>
+<p><strong>Leetcode217：Contains Duplicate</strong></p>
+<p>Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.</p>
+<p>给定一个整数数组，判断是否存在重复元素。</p>
+<p>如果存在一值在数组中出现至少两次，函数返回 true 。如果数组中每个元素都不相同，则返回 false 。</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211104221544235.png" alt="image-20211104221544235"></p>
+<p><strong>代码解答</strong></p>
+<pre><code class="java">class Solution &#123;
+    public boolean containsDuplicate(int[] nums) &#123;
+        Set&lt;Integer&gt; set = new HashSet&lt;Integer&gt;();
+        for(int x : nums)&#123;
+            if(!set.add(x))&#123;
+                return true;
+            &#125;
+        &#125;
+        return false;
+    &#125;
+&#125;
+</code></pre>
 
     </div>
 
@@ -185,7 +203,7 @@
                 
     <h1>Tags</h1>
 
-    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
 
             </section>
         </aside>
