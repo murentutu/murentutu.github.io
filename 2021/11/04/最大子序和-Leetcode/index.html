@@ -124,65 +124,55 @@
 
 </header>
         <main class="main">
-            
-<section class="posts">
+            <article class="post">
     
-        <article class="post">
-            
-                    <h1 class="post-title">
-                        <a href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">
-                            最大子序和-Leetcode
-                        </a>
-                    </h1>
+    
+    
+    <h2 class="post-title">
+        最大子序和-Leetcode
+    </h2>
+    <ul class="post-date">
+        <li>
+            2021-11-04
+        </li>
+        <li>
+            murentutu
+        </li>
+    </ul>
+    <div class="post-content">
+        <p><strong>题目</strong>：给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211104231028856.png" alt="image-20211104231028856"></p>
+<p><strong>分析</strong></p>
+<p><strong>方法一：贪心算法</strong></p>
+<pre><code class="python">class Solution:
+    def maxSubArray(self, nums: List[int]) -&gt; int:
+        # 贪心
+        # 如果当前指针所指元素之前的和小于0，则丢弃当前元素之前的数列
+        # 复杂度：空间复杂度O(1),时间复杂度O(n)
+        cur_sum = max_sum = nums[0]
+        for i in range(1, len(nums)):
+            cur_sum = max(nums[i],cur_sum+nums[i])
+            max_sum = max(cur_sum,max_sum)
+        return max_sum
+</code></pre>
+<p><strong>方法二：动态规划</strong></p>
+<pre><code class="python">class Solution:
+    def maxSubArray(self, nums: List[int]) -&gt; int:
+        # 动态规划
+        # 若前一个元素大于0，则将其加到当前元素上
+        # 复杂度：空间复杂度O(1),时间复杂度O(n)
+        n = len(nums)
+        for i in range(1,n):
+            if nums[i-1] &gt; 0:
+                nums[i] += nums[i-1]
+        return max(nums)
+</code></pre>
 
-                    <ul class="post-date">
-                        <li>
-                            November 4, 2021
-                        </li>
-                        <li>
-                            murentutu
-                        </li>
-                    </ul>
-                    
-                        <div class="post-cover">
-                            <img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211104231028856.png">
-                        </div>
-                    
-                    <div class="post-content ">
-                        
-                            <a href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/" class="more-link">Continue reading</a>
-                    </div>
-        </article>
-        
-        <article class="post">
-            
-                    <h1 class="post-title">
-                        <a href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">
-                            Java Set.add()方法
-                        </a>
-                    </h1>
+    </div>
 
-                    <ul class="post-date">
-                        <li>
-                            November 4, 2021
-                        </li>
-                        <li>
-                            murentutu
-                        </li>
-                    </ul>
-                    
-                        <div class="post-cover">
-                            <img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211104221544235.png">
-                        </div>
-                    
-                    <div class="post-content ">
-                        
-                            <a href="/2021/11/04/java%E7%9F%A5%E8%AF%86/" class="more-link">Continue reading</a>
-                    </div>
-        </article>
-        
-</section>
 
+
+</article>
         </main>
         <aside class="aside">
             <div class="close"></div>
