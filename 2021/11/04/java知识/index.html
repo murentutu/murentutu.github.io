@@ -127,38 +127,37 @@
             <article class="post">
     
     
-    <h4 class="post-cat">
-        <a href="/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">
-            AI数学基础
-        </a>
-    </h4>
-    
     
     <h2 class="post-title">
-        02. 微积分初步
+        Java Set.add()方法
     </h2>
     <ul class="post-date">
         <li>
-            2021-10-17
+            2021-11-04
         </li>
         <li>
             murentutu
         </li>
     </ul>
     <div class="post-content">
-        <h4 id="2-1-极限与连续性"><a href="#2-1-极限与连续性" class="headerlink" title="2.1 极限与连续性"></a>2.1 极限与连续性</h4><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211017163453714.png"></p>
-<pre><code class="python">from sympy import *
-import matplotlib.pyplot as plt
-# 定义符号表达式
-x = Symbol(&#39;x&#39;)
-f = sin(x) / x
-result = limit(f, x, 0)
-print(&#39;x--&gt;0,limit:&#39;, result)
-result = limit(f,x,oo)
-print(&#39;x--&gt;oo,limit:&#39;,result)
-plot(f,(x,-100,100))
+        <ul>
+<li>Java 集合类中的 Set.add() 方法用来向 Set 集合添加对象。</li>
+<li>如果 Set 集合中已经包含相同的对象，则不改变 Set 集合。</li>
+<li>该方法返回值为 boolean 对象，如果 Set 集合中不包含要添加的对象，则添加对象并返回   true，否则返回 false。</li>
+</ul>
+<p><strong>用法:向Set集合添加对象（可用作哈希表查找，如果哈希表中已经有该对象，则不再添加）</strong></p>
+<pre><code class="java">public static void main(String[] args)&#123;
+    Set set = new HashSet();  //定义Set集合对象
+    set.add(new Date());  //向集合中添加日期对象
+    set.add(&quot;apple&quot;);  //向集合中添加对象
+    set.add(&quot;book&quot;);
+    set.add(&quot;apple&quot;);
+    set.add(new Integer(3));
+    int size = set.size();  //获取集合的大小
+    System.out.println(&quot;Set集合的大小为:&quot;+size);  //将集合大小输出
+&#125;
 </code></pre>
-<h4 id="2-2-导数与微分"><a href="#2-2-导数与微分" class="headerlink" title="2.2 导数与微分"></a>2.2 导数与微分</h4>
+
     </div>
 
 

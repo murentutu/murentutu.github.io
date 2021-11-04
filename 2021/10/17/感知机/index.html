@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        murentutu
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <link rel="stylesheet" href="/js/prism/prism.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="murentutu" type="application/atom+xml">
+</head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                murentutu
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            murentutu
+        </a>
+    </h1>
+    <h2 class="desc">
+        Every day is a chance to learn something new.
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://github.com/murentutu">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://user.qzone.qq.com/3129058728/">
+                    qq
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <script src="/js/prism/clipboard.js"></script>
+<script src="/js/prism/prism.js" async></script>
+
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    <h4 class="post-cat">
+        <a href="/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/">
+            《统计学习方法》
+        </a>
+    </h4>
+    
+    
+    <h2 class="post-title">
+        第2章 感知机
+    </h2>
+    <ul class="post-date">
+        <li>
+            2021-10-17
+        </li>
+        <li>
+            murentutu
+        </li>
+    </ul>
+    <div class="post-content">
+        <h4 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h4><p>​        感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出将训练数据进行线性划分的分离超平面，为此，导入基于误分类的损失函数，利用梯度下降法对损失函数进行极小化，求得感知机模型。它是神经网络与支持向量机的基础。</p>
+<blockquote>
+<p>什么是超平面？</p>
+<pre><code> 可以理解为对于一个n维空间，超平面就是一个n-1维的子空间，可以用来分割n维空间。
+</code></pre>
+</blockquote>
+<h4 id="2-感知机模型"><a href="#2-感知机模型" class="headerlink" title="2. 感知机模型"></a>2. 感知机模型</h4><p>由输入空间到输出空间的如下函数：<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018201948328.png" alt="image-20211018201948328" style="zoom:80%;" />称为感知机。</p>
+<p>其中 w和 b 属于感知机模型参数，w∈Rn 叫作权值或权值向量（weight vector)， b∈R叫作偏置 (bias)。w⋅x为w和x的内积。 sign是符号函数，即：</p>
+<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018202400869.png" alt="image-20211018202400869" style="zoom: 80%;" />
+
+<p>感知机模型的假设空间定义在特征空间中的所有线性分类模型或线性分类器（linear classifier ) , 即函数集合<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018202613465.png" alt="image-20211018202613465" style="zoom:80%;" />。</p>
+<p>训练感知机模型就是通过训练集数据学习参数 w 和 b ，然后训练好的感知机模型就能对新的输入实例进行类别的预测。</p>
+<h4 id="3-感知机学习策略"><a href="#3-感知机学习策略" class="headerlink" title="3. 感知机学习策略"></a>3. 感知机学习策略</h4><h5 id="3-1-数据集的线性可分性"><a href="#3-1-数据集的线性可分性" class="headerlink" title="3.1 数据集的线性可分性"></a>3.1 数据集的线性可分性</h5><p>​    指对于一个给定的数据集，我们可以将数据集的正实例点和负实例点完全正确地划分到超平面的两侧。即对所有<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018203624065.png" alt="image-20211018203624065" style="zoom:80%;" />的实例i，有<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018203705447.png" alt="image-20211018203705447" style="zoom:80%;" />，反之也成立。</p>
+<h5 id="3-2-感知机学习策略"><a href="#3-2-感知机学习策略" class="headerlink" title="3.2 感知机学习策略"></a>3.2 感知机学习策略</h5><p>​    确定一个学习策略，即定义（经验）损失函数并将损失函数极小化。</p>
+<ul>
+<li>基于误分类点总数的策略（这样的损失函数不是关于参数w，b的连续可导函数，不易优化）</li>
+<li>基于误分类点总距离的策略</li>
+</ul>
+<p>在这种分类下，输入空间中任意一点到超平面的距离公式为：<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018204231764.png" alt="image-20211018204231764" style="zoom:80%;" />，其中<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018204318047.png" alt="image-20211018204318047" style="zoom:80%;" />是w的L2范数。</p>
+<p>对于误分类的数据：<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018204416628.png" alt="image-20211018204416628" style="zoom: 80%;" />即误分类点到超平面S的距离为<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018204512859.png" alt="image-20211018204512859" style="zoom: 67%;" />。最终得到感知机损失函数(经验风险函数)为<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018204553202.png" alt="image-20211018204553202" style="zoom:80%;" /></p>
+<h4 id="4-感知机学习算法"><a href="#4-感知机学习算法" class="headerlink" title="4 感知机学习算法"></a>4 感知机学习算法</h4><h5 id="4-1-原始形式"><a href="#4-1-原始形式" class="headerlink" title="4.1 原始形式"></a>4.1 原始形式</h5><p>​    求参数w，b，使其为以下损失函数极小化问题的解：<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018205057025.png" alt="image-20211018205057025" style="zoom:80%;" /></p>
+<p>​    我们采用随机梯度下降法（stochastic gradient descent）不断极小化目标函数。极小化过程中随机选取一个误分类点使其梯度下降。求梯度并随机选取一个误分类点对w，b进行更新：</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018205519732.png" alt="image-20211018205519732" style="zoom:80%;" /><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018205550550.png" alt="image-20211018205550550" style="zoom:80%;" /></p>
+<ul>
+<li><p>算法1</p>
+<p>输入：训练数据集T，学习率η</p>
+<p>输出：w和b</p>
+<p>步骤：</p>
+<ol>
+<li>选取初值w，b</li>
+<li>在数据集中选取数据<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018210218329.png" alt="image-20211018210218329" style="zoom:80%;" /></li>
+<li>如果<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018210250149.png" alt="image-20211018210250149" style="zoom: 80%;" />（则该数据点显然是误分类点），并且<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211018211159471.png" alt="image-20211018211159471" style="zoom:80%;" /></li>
+<li>转至（2），直到训练集中没有误分类点。</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+
+
+
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">AI数学基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/">《统计学习方法》</a></li></ul>
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

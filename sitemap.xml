@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://murentutu.github.io/2021/10/16/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://murentutu.github.io/2021/11/04/java%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-11-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/</loc>
+    
+    <lastmod>2021-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/</loc>
+    
+    <lastmod>2021-10-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/2021/10/17/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%88%9D%E6%AD%A5/</loc>
     
     <lastmod>2021-10-17</lastmod>
     
   </url>
   
   <url>
-    <loc>https://murentutu.github.io/2021/10/17/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%88%9D%E6%AD%A5/</loc>
+    <loc>https://murentutu.github.io/2021/10/16/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/</loc>
     
     <lastmod>2021-10-17</lastmod>
     
@@ -53,7 +74,7 @@
 
   <url>
     <loc>https://murentutu.github.io/</loc>
-    <lastmod>2021-10-17</lastmod>
+    <lastmod>2021-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,14 +82,21 @@
   
   <url>
     <loc>https://murentutu.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2021-10-17</lastmod>
+    <lastmod>2021-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://murentutu.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-10-17</lastmod>
+    <lastmod>2021-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/tags/Java/</loc>
+    <lastmod>2021-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -77,7 +105,14 @@
   
   <url>
     <loc>https://murentutu.github.io/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2021-10-17</lastmod>
+    <lastmod>2021-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/</loc>
+    <lastmod>2021-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
