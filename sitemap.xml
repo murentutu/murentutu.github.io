@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://murentutu.github.io/2021/11/28/%E9%97%B2%E8%B0%88/</loc>
+    
+    <lastmod>2021-11-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://murentutu.github.io/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/</loc>
     
     <lastmod>2021-11-04</lastmod>
@@ -81,7 +88,7 @@
 
   <url>
     <loc>https://murentutu.github.io/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -89,28 +96,35 @@
   
   <url>
     <loc>https://murentutu.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://murentutu.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://murentutu.github.io/tags/Java/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://murentutu.github.io/tags/Leetcode/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/tags/little-talk/</loc>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -119,14 +133,14 @@
   
   <url>
     <loc>https://murentutu.github.io/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://murentutu.github.io/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
