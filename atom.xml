@@ -6,7 +6,7 @@
   <link href="https://murentutu.github.io/atom.xml" rel="self"/>
   
   <link href="https://murentutu.github.io/"/>
-  <updated>2021-11-28T14:07:35.377Z</updated>
+  <updated>2021-11-29T15:37:52.068Z</updated>
   <id>https://murentutu.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>网协复习-第二章</title>
+    <link href="https://murentutu.github.io/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
+    <id>https://murentutu.github.io/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/</id>
+    <published>2021-11-29T15:36:04.000Z</published>
+    <updated>2021-11-29T15:37:52.068Z</updated>
+    
+    <content type="html"><![CDATA[<p>一章节的内容。。。</p><p>简直坐牢。。。</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/%E5%BA%95%E5%B1%82%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF.png" alt="底层网络技术"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一章节的内容。。。&lt;/p&gt;
+&lt;p&gt;简直坐牢。。。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/murentutu/cloudimages/raw/master/img/%E5%BA%95%E5%B1%82%E7%BD%91%E7%BB%9C%E6%</summary>
+      
+    
+    
+    
+    
+    <category term="网络协议分析" scheme="https://murentutu.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
     <title>闲谈</title>
     <link href="https://murentutu.github.io/2021/11/28/%E9%97%B2%E8%B0%88/"/>
     <id>https://murentutu.github.io/2021/11/28/%E9%97%B2%E8%B0%88/</id>
     <published>2021-11-28T13:46:19.000Z</published>
-    <updated>2021-11-28T14:07:35.377Z</updated>
+    <updated>2021-11-29T15:36:33.488Z</updated>
     
     <content type="html"><![CDATA[<p>2021.11.28</p><p>​    这一个月来，发生了改变我一生的事情。</p><p>​    我反应得太慢，直到刚刚看到了<a href="http://duitutu.cn/2021/10/27/%E5%8D%81%E6%9C%88/">http://duitutu.cn/2021/10/27/%E5%8D%81%E6%9C%88/</a></p><p>​    突然什么都明白了，其实你想说的话，早就一个月前就想说的话，都在这里了。。</p><p>​    我看到了，其实你心里堆着的是你自己的未来，我已经成为了一笔带过的一句“没有必要”。</p><p>​    很简单了，我很明白了。</p><p>​    我也要开始努力了。</p><p>​    虽然我们不会再有交集，我也想触碰之前想要达到的高度。</p><p>​    请你好好注意休息，祝你前程似锦。</p><p>​    以前的一些心事，我就藏在这里了。</p><p>​    我自己也是一路摆烂了呀，我也要努力努力再努力！！！</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211128215745398.png" alt="image-20211128215745398"></p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211128215828322.png" alt="image-20211128215828322"></p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211128220554078.png" alt="image-20211128220554078"></p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211128220626854.png" alt="image-20211128220626854"></p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/image-20211128220728364.png" alt="image-20211128220728364"></p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/8(ASI3C)707%5DFFK%5DA2BTX%7BF.jpg" alt="img"></p><p>​    <img src="https://gitee.com/murentutu/cloudimages/raw/master/img/I1A5K0128W~B%6050RW(T9()T.jpg" alt="img"></p>]]></content>
     
@@ -36,7 +60,7 @@
     
     
     
-    <category term="-little talk" scheme="https://murentutu.github.io/tags/little-talk/"/>
+    <category term="little talk" scheme="https://murentutu.github.io/tags/little-talk/"/>
     
   </entry>
   
