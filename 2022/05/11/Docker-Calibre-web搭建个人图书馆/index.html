@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="You should strive for self-improvement."><title>Docker+Calibre-web搭建个人图书馆 | murentutu</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Docker+Calibre-web搭建个人图书馆</h1><a id="logo" href="/.">murentutu</a><p class="description">You should strive for self-improvement.</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Docker+Calibre-web搭建个人图书馆</h1><div class="post-meta">2022-05-11<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><h3 id="使用docker搭建个人图书馆"><a href="#使用docker搭建个人图书馆" class="headerlink" title="使用docker搭建个人图书馆"></a>使用docker搭建个人图书馆</h3><h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><ol>
+<li><p>更新yum<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123619.png" alt="image-20220511002933547"></p>
+</li>
+<li><p>安装需要的软件包</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123897.png" alt="image-20220511003259831"></p>
+</li>
+<li><p>设置yum源</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123504.png" alt="image-20220511003452579"></p>
+</li>
+<li><p>查看所有仓库中的docker版本，选择特定版本安装。</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123602.png" alt="image-20220511004024228"></p>
+</li>
+<li><p>启动并加入开机启动</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123743.png" alt="image-20220511004121584"></p>
+</li>
+<li><p>验证安装是否成功</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123460.png" alt="image-20220511004239257"></p>
+</li>
+<li><p>安装配置文件，输入 vim  /etc/sysctl.conf 打开配置文件，Calibre-Web 需要开启IPv4转发，CentOS默认不支持IPv4转发。</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124916.png" alt="image-20220511004744569"></p>
+</li>
+<li><p>激活配置文件</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124026.png" alt="image-20220511004841273"></p>
+</li>
+</ol>
+<h4 id="拉取calibre镜像"><a href="#拉取calibre镜像" class="headerlink" title="拉取calibre镜像"></a>拉取calibre镜像</h4><ol>
+<li><p>使用<a target="_blank" rel="noopener" href="https://hub.docker.com/r/technosoft2000/calibre-web">technosoft2000/calibre-web</a>镜像</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124972.png" alt="image-20220511005507222"></p>
+</li>
+<li><p>启动calibre-web</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124383.png" alt="image-20220511005611314"></p>
+</li>
+<li><p>要启动calibre-web，有一个关键的依赖是metadata.db文件，没有这个文件calibre-web无法正常运行。打开本地电脑calibre客户端软件，查看书库的目录。</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124461.png" alt="image-20220511010109933"></p>
+</li>
+<li><p>到对应路径下，找到metadata.db文件，将其上传到/data/caliber/books目录下。</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124208.png" alt="image-20220511010355217"></p>
+</li>
+<li><p>为了数据库配置能够正常写入，我们需要给/data/calibre 目录设置为可写入的权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -R 777 /data/calibre/*</span><br></pre></td></tr></table></figure></li>
+<li><p>登录calibre-web，浏览器访问ip地址，默认的用户名为admin，密码为admin123</p>
+<p><img src="C:/Users/31290/AppData/Roaming/Typora/typora-user-images/image-20220511010605535.png" alt="image-20220511010605535"></p>
+</li>
+<li><p>配置书库地址为/books,然后点击保存</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124984.png" alt="image-20220511010858419"></p>
+</li>
+<li><p>点击admin，修改语言为中文，记得在最下面点击save进行保存</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124356.png" alt="image-20220511010946844"></p>
+</li>
+<li><p>上传书籍和在线阅读</p>
+<p>点击管理权限-&gt;编辑基本配置-&gt;基本配置-&gt;启动上传-&gt;保存</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125906.png" alt="image-20220511011240782">              </p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124168.png" alt="image-20220511011348412"></p>
+</li>
+<li><p>配置启动上传后，就可以将我们本地的电子书上传到服务器中</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125404.png" alt="image-20220511011529788"></p>
+</li>
+<li><p>选择本地的一本电子书</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125081.png" alt="image-20220511011701948"></p>
+</li>
+<li><p>calibre-web会自动提取电子书中的元数据</p>
+<p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125303.png" alt="image-20220511011816841"></p>
+</li>
+<li><p>之后的操作和客户端calibre类似，就不细说了。</p>
+</li>
+</ol>
+</div><div class="tags"><a href="/tags/Docker/"><i class="fa fa-tag"></i>-Docker</a></div><div class="post-nav"><a class="next" href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=1.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=1.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=1.0.0"></script><script>var gitalk = new Gitalk({
+  clientID: 'd993f69739800ba22272',
+  clientSecret: '96ffea01b2b4b0b1059067cf0b1680f61f8b91f0',
+  repo: 'blogtalk',
+  owner: 'murentutu',
+  admin: ['murentutu'],
+  id: md5(location.pathname),
+  distractionFreeMode: false
+})
+gitalk.render('container')
+</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://murentutu.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">AI数学基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/">《统计学习方法》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px;">测试</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">笔记</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%88%86%E6%9E%90/" style="font-size: 15px;">网络协议分析</a> <a href="/tags/little-talk/" style="font-size: 15px;">little talk</a> <a href="/tags/Docker/" style="font-size: 15px;">-Docker</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">Docker+Calibre-web搭建个人图书馆</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">python爬虫02</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">python爬虫01</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/01/12%E6%9C%88/">12月</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">网协复习-第二章</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">最大子序和-Leetcode</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">Java Set.add()方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/">Numpy简易入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/">第2章 感知机</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.cnblogs.com/murentutu/" title="murentutu" target="_blank">murentutu</a><ul></ul><a href="http://duitutu.cn/" title="Du1L0v3" target="_blank">Du1L0v3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">murentutu.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

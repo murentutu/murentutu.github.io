@@ -6,7 +6,7 @@
   <link href="https://murentutu.github.io/atom.xml" rel="self"/>
   
   <link href="https://murentutu.github.io/"/>
-  <updated>2021-12-25T12:16:32.744Z</updated>
+  <updated>2022-05-10T17:26:00.483Z</updated>
   <id>https://murentutu.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker+Calibre-web搭建个人图书馆</title>
+    <link href="https://murentutu.github.io/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/"/>
+    <id>https://murentutu.github.io/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/</id>
+    <published>2022-05-10T17:21:19.000Z</published>
+    <updated>2022-05-10T17:26:00.483Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="使用docker搭建个人图书馆"><a href="#使用docker搭建个人图书馆" class="headerlink" title="使用docker搭建个人图书馆"></a>使用docker搭建个人图书馆</h3><h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><ol><li><p>更新yum<img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123619.png" alt="image-20220511002933547"></p></li><li><p>安装需要的软件包</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123897.png" alt="image-20220511003259831"></p></li><li><p>设置yum源</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123504.png" alt="image-20220511003452579"></p></li><li><p>查看所有仓库中的docker版本，选择特定版本安装。</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123602.png" alt="image-20220511004024228"></p></li><li><p>启动并加入开机启动</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123743.png" alt="image-20220511004121584"></p></li><li><p>验证安装是否成功</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110123460.png" alt="image-20220511004239257"></p></li><li><p>安装配置文件，输入 vim  /etc/sysctl.conf 打开配置文件，Calibre-Web 需要开启IPv4转发，CentOS默认不支持IPv4转发。</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124916.png" alt="image-20220511004744569"></p></li><li><p>激活配置文件</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124026.png" alt="image-20220511004841273"></p></li></ol><h4 id="拉取calibre镜像"><a href="#拉取calibre镜像" class="headerlink" title="拉取calibre镜像"></a>拉取calibre镜像</h4><ol><li><p>使用<a href="https://hub.docker.com/r/technosoft2000/calibre-web">technosoft2000/calibre-web</a>镜像</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124972.png" alt="image-20220511005507222"></p></li><li><p>启动calibre-web</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124383.png" alt="image-20220511005611314"></p></li><li><p>要启动calibre-web，有一个关键的依赖是metadata.db文件，没有这个文件calibre-web无法正常运行。打开本地电脑calibre客户端软件，查看书库的目录。</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124461.png" alt="image-20220511010109933"></p></li><li><p>到对应路径下，找到metadata.db文件，将其上传到/data/caliber/books目录下。</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124208.png" alt="image-20220511010355217"></p></li><li><p>为了数据库配置能够正常写入，我们需要给/data/calibre 目录设置为可写入的权限</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -R 777 /data/calibre/*</span><br></pre></td></tr></table></figure></li><li><p>登录calibre-web，浏览器访问ip地址，默认的用户名为admin，密码为admin123</p><p><img src="C:/Users/31290/AppData/Roaming/Typora/typora-user-images/image-20220511010605535.png" alt="image-20220511010605535"></p></li><li><p>配置书库地址为/books,然后点击保存</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124984.png" alt="image-20220511010858419"></p></li><li><p>点击admin，修改语言为中文，记得在最下面点击save进行保存</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124356.png" alt="image-20220511010946844"></p></li><li><p>上传书籍和在线阅读</p><p>点击管理权限-&gt;编辑基本配置-&gt;基本配置-&gt;启动上传-&gt;保存</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125906.png" alt="image-20220511011240782">              </p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110124168.png" alt="image-20220511011348412"></p></li><li><p>配置启动上传后，就可以将我们本地的电子书上传到服务器中</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125404.png" alt="image-20220511011529788"></p></li><li><p>选择本地的一本电子书</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125081.png" alt="image-20220511011701948"></p></li><li><p>calibre-web会自动提取电子书中的元数据</p><p><img src="https://gitee.com/murentutu/cloudimages/raw/master/img/202205110125303.png" alt="image-20220511011816841"></p></li><li><p>之后的操作和客户端calibre类似，就不细说了。</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;使用docker搭建个人图书馆&quot;&gt;&lt;a href=&quot;#使用docker搭建个人图书馆&quot; class=&quot;headerlink&quot; title=&quot;使用docker搭建个人图书馆&quot;&gt;&lt;/a&gt;使用docker搭建个人图书馆&lt;/h3&gt;&lt;h4 id=&quot;安装docker&quot;&gt;&lt;a </summary>
+      
+    
+    
+    
+    
+    <category term="-Docker" scheme="https://murentutu.github.io/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>python爬虫03</title>
