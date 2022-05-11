@@ -1,4 +1,135 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="You should strive for self-improvement."><title>python爬虫03 | murentutu</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">python爬虫03</h1><a id="logo" href="/.">murentutu</a><p class="description">You should strive for self-improvement.</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">python爬虫03</h1><div class="post-meta">2021-12-25<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><blockquote>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>python爬虫03 | murentutu</title>
+  <meta name="author" content="murentutu">
+  
+  <meta name="description" content="You should strive for self-improvement.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="python爬虫03"/>
+  <meta property="og:site_name" content="murentutu"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="murentutu" type="application/atom+xml">
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">murentutu</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> python爬虫03</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <blockquote>
 <p>上次将爬虫的数据完善了几个功能，爬取多页、去重，存储数据库等。</p>
 <p>要做一个搜索引擎，数据我有了，接下来需要把数据传到前端的页面去，并且将要搜索的内容和数据库匹配得到之后返回到页面上。基本上就是这么一个步骤。</p>
 </blockquote>
@@ -6,89 +137,492 @@
 <h4 id="01-新建一个Django项目-Creating-a-project"><a href="#01-新建一个Django项目-Creating-a-project" class="headerlink" title="01 新建一个Django项目(Creating a project)"></a>01 新建一个Django项目(Creating a project)</h4><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034655.png" alt="image-20211225161319716"></p>
 <p>pycharm可以直接创建，选择创建后会自动下载一些东西，需要一点点时间。</p>
 <p>也可以采用Django官方文档上的步骤，在需要创建的项目目录下命令行输入</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ django-admin startproject mysite</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">$ django-admin startproject mysite
+</code></pre>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034999.png" alt="image-20211225161530144"></p>
 <p>项目创建完以后的目录结构如下：</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034717.png" alt="image-20211225161633663"></p>
 <p>之后运行我们的项目都是在上面的manage.py下面进行运行，使用以下代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage.py runserver</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">$ python manage.py runserver
+</code></pre>
 <p>使用pycharm的话，可以在run下面进行配置。run-&gt;edit-configurations…</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034098.png" alt="image-20211225161958799"></p>
 <p>找到python下面的manage，在parameters这一行添加上runserver，这样之后我们只需要点击运行pycharm会在后面默认添加上参数。</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035481.png" alt="image-20211225162126161"></p>
 <h4 id="02-创建一个应用app-Creating-the-Polls-app"><a href="#02-创建一个应用app-Creating-the-Polls-app" class="headerlink" title="02 创建一个应用app(Creating the Polls app)"></a>02 创建一个应用app(Creating the Polls app)</h4><p>创建完项目以后，我们需要在项目下创建我们的第一个应用。使用一下代码创建</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage.py startapp polls</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">$ python manage.py startapp polls
+</code></pre>
 <p>创建完以后应用目录如下：</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035969.png" alt="image-20211225164226053"></p>
 <p>还需要在polls目录下手动创建一个urls.py，用来和views.py里面的自定义函数进行映射。如下：</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035558.png" alt="image-20211225164736607"></p>
 <p>还需要将polls/urls.py在项目目录的urls.py中进行映射。添加如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> include, path</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">&#x27;polls/&#x27;</span>, include(<span class="string">&#x27;polls.urls&#x27;</span>)),</span><br><span class="line">    path(<span class="string">&#x27;admin/&#x27;</span>, admin.site.urls),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<pre><code class="python">from django.contrib import admin
+from django.urls import include, path
 
+urlpatterns = [
+    path(&#39;polls/&#39;, include(&#39;polls.urls&#39;)),
+    path(&#39;admin/&#39;, admin.site.urls),
+]
+</code></pre>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035099.png" alt="image-20211225170437074"></p>
 <blockquote>
 <p>小tips：记得在settings里面添加一行代码，找到INSTALLED_APPS</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035983.png" alt="image-20211225170731971"></p>
 </blockquote>
 <h4 id="03-数据库建立-Database-setup"><a href="#03-数据库建立-Database-setup" class="headerlink" title="03 数据库建立(Database setup)"></a>03 数据库建立(Database setup)</h4><p>首先，在项目的settings.py文件下面更改数据库代码如下：（因为我使用的是MySQL，Django默认使用SQLlite）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">DATABASES = &#123;</span><br><span class="line">    <span class="string">&#x27;default&#x27;</span>:</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&#x27;ENGINE&#x27;</span>: <span class="string">&#x27;django.db.backends.mysql&#x27;</span>,  <span class="comment"># 数据库引擎</span></span><br><span class="line">            <span class="string">&#x27;NAME&#x27;</span>: <span class="string">&#x27;django&#x27;</span>,  <span class="comment"># 数据库名称</span></span><br><span class="line">            <span class="string">&#x27;HOST&#x27;</span>: <span class="string">&#x27;127.0.0.1&#x27;</span>,  <span class="comment"># 数据库地址，</span></span><br><span class="line">            <span class="string">&#x27;PORT&#x27;</span>: <span class="number">3306</span>,  <span class="comment"># 端口</span></span><br><span class="line">            <span class="string">&#x27;USER&#x27;</span>: <span class="string">&#x27;root&#x27;</span>,  <span class="comment"># 数据库用户名</span></span><br><span class="line">            <span class="string">&#x27;PASSWORD&#x27;</span>: <span class="string">&#x27;123456&#x27;</span>  <span class="comment"># 数据库密码</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">DATABASES = &#123;
+    &#39;default&#39;:
+        &#123;
+            &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,  # 数据库引擎
+            &#39;NAME&#39;: &#39;django&#39;,  # 数据库名称
+            &#39;HOST&#39;: &#39;127.0.0.1&#39;,  # 数据库地址，
+            &#39;PORT&#39;: 3306,  # 端口
+            &#39;USER&#39;: &#39;root&#39;,  # 数据库用户名
+            &#39;PASSWORD&#39;: &#39;123456&#39;  # 数据库密码
+        &#125;
+&#125;
+</code></pre>
 <p>然后，在命令行输入命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage.py migrate</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">$ python manage.py migrate
+</code></pre>
 <h4 id="04-创建并激活模型（Creating-models-amp-Activating-models）"><a href="#04-创建并激活模型（Creating-models-amp-Activating-models）" class="headerlink" title="04 创建并激活模型（Creating models&amp;Activating models）"></a>04 创建并激活模型（Creating models&amp;Activating models）</h4><p>需要在polls/models.py创建模型，代码如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create your models here.</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NewsInfo</span>(<span class="params">models.Model</span>):</span></span><br><span class="line">    news_url = models.CharField(max_length=<span class="number">100</span>)</span><br><span class="line">    news_title = models.CharField(max_length=<span class="number">100</span>)</span><br><span class="line">    news_date = models.DateField()</span><br></pre></td></tr></table></figure>
+<pre><code class="python">from django.db import models
 
+# Create your models here.
+class NewsInfo(models.Model):
+    news_url = models.CharField(max_length=100)
+    news_title = models.CharField(max_length=100)
+    news_date = models.DateField()
+</code></pre>
 <p>命令行执行命令如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage.py makemigrations polls</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">$ python manage.py makemigrations polls
+</code></pre>
 <p>成功创建完成后，在polls目录下会生成一个migrations目录，如下所示：</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035996.png" alt="image-20211225193721308"></p>
 <p>最后再执行一次迁移命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python manage.py migrate</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">$ python manage.py migrate
+</code></pre>
 <blockquote>
 <p>这里我使用的是MySQL，后面运行时，需要提前下载好pymysql，并且在项目的”init.py”中添加如下代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line">pymysql.install_as_MySQLdb()</span><br></pre></td></tr></table></figure>
+<pre><code class="python">import pymysql
+pymysql.install_as_MySQLdb()
+</code></pre>
 </blockquote>
 <h4 id="05-使用Django的模板系统"><a href="#05-使用Django的模板系统" class="headerlink" title="05 使用Django的模板系统"></a>05 使用Django的模板系统</h4><p>通常，页面的设计在视图中都是硬编码的，如果要更改页面的外观，会比较麻烦。这里，我们可以使用Django的模板系统，通过创建视图使用的模板，可以做到页面设计和python分开。</p>
 <p>首先，需要创建一个目录，在polls目录创建一个名为templates的目录，我们之后会将html写在这个目录里面。通常我们使用下面这两个方法进行渲染。</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035434.png" alt="image-20211225194905582"></p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035302.png" alt="image-20211225194937833"></p>
 <p>看下面一段代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&#123;% url &#x27;detail&#x27; question.id %&#125;&quot;</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="html">&lt;li&gt;&lt;a href=&quot;&#123;% url 'detail' question.id %&#125;&quot;&gt;&#123;&#123; question.question_text &#125;&#125;&lt;/a&gt;&lt;/li&gt;
+</code></pre>
 <p>同JSP类似，我们在HTML中插入变量和方法可以使用上面的方法。</p>
 <h4 id="06-做一个搜索引擎"><a href="#06-做一个搜索引擎" class="headerlink" title="06 做一个搜索引擎"></a>06 做一个搜索引擎</h4><p>接下来就是我的项目展示了吧。不想写了。。</p>
-<h5 id="实现新闻列表"><a href="#实现新闻列表" class="headerlink" title="实现新闻列表"></a>实现新闻列表</h5><h6 id="python代码"><a href="#python代码" class="headerlink" title="python代码"></a>python代码</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">News</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="comment"># 新闻列表</span></span><br><span class="line">    news_list = NewsInfo.objects.<span class="built_in">all</span>()</span><br><span class="line">    pag = Paginator(news_list, <span class="number">50</span>)</span><br><span class="line">    page = request.GET.get(<span class="string">&#x27;page&#x27;</span>)</span><br><span class="line">    page = pag.get_page(page)</span><br><span class="line">    context = &#123;</span><br><span class="line">        <span class="string">&#x27;news_list&#x27;</span>: news_list,</span><br><span class="line">        <span class="string">&#x27;page&#x27;</span>: page</span><br><span class="line">    &#125;</span><br><span class="line">    template = loader.get_template(<span class="string">&#x27;news.html&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(template.render(context, request))</span><br></pre></td></tr></table></figure>
+<h5 id="实现新闻列表"><a href="#实现新闻列表" class="headerlink" title="实现新闻列表"></a>实现新闻列表</h5><h6 id="python代码"><a href="#python代码" class="headerlink" title="python代码"></a>python代码</h6><pre><code class="python">def News(request):
+    # 新闻列表
+    news_list = NewsInfo.objects.all()
+    pag = Paginator(news_list, 50)
+    page = request.GET.get(&#39;page&#39;)
+    page = pag.get_page(page)
+    context = &#123;
+        &#39;news_list&#39;: news_list,
+        &#39;page&#39;: page
+    &#125;
+    template = loader.get_template(&#39;news.html&#39;)
+    return HttpResponse(template.render(context, request))
+</code></pre>
+<h6 id="新闻页面"><a href="#新闻页面" class="headerlink" title="新闻页面"></a>新闻页面</h6><pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;News&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../static/css/news.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;
+          integrity=&quot;sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot; style=&quot;width: 900px; top: 100px;&quot;&gt;
+    &lt;form method=&quot;post&quot; action=&quot;index&quot; style=&quot;width: 900px; margin: 0 auto&quot; &gt;
+        &#123;% csrf_token %&#125;
+        &lt;div class=&quot;bg-img&quot;&gt;
+            &lt;img class=&quot;logo&quot; src=&quot;../static/img/logo.png&quot; alt=&quot;新闻网logo&quot; style=&quot;display: block; margin: 0 auto&quot;&gt;
 
-<h6 id="新闻页面"><a href="#新闻页面" class="headerlink" title="新闻页面"></a>新闻页面</h6><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>News<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;../static/css/news.css&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">integrity</span>=<span class="string">&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">integrity</span>=<span class="string">&quot;sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">integrity</span>=<span class="string">&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 900px; top: 100px;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">action</span>=<span class="string">&quot;index&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 900px; margin: 0 auto&quot;</span> &gt;</span></span><br><span class="line">        &#123;% csrf_token %&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;bg-img&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;../static/img/logo.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;新闻网logo&quot;</span> <span class="attr">style</span>=<span class="string">&quot;display: block; margin: 0 auto&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;width: 100%&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">class</span>=<span class="string">&quot;btn btn-primary&quot;</span> <span class="attr">style</span>=<span class="string">&quot;float: right&quot;</span>&gt;</span>搜索<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">table</span> <span class="attr">style</span>=<span class="string">&quot;width: 90%; &quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">style</span>=<span class="string">&quot;height: 20px;font-size: large;font-family: &#x27;Consolas&#x27;, &#x27;Monaco&#x27;, &#x27;Bitstream Vera Sans Mono&#x27;, monospace&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span> <span class="attr">style</span>=<span class="string">&quot;width: 80px&quot;</span>&gt;</span>ID<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>TITLE<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>DATE<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            &#123;#        <span class="tag">&lt;<span class="name">td</span>&gt;</span>delete<span class="tag">&lt;/<span class="name">td</span>&gt;</span>#&#125;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        &#123;% for pag in page %&#125;</span><br><span class="line">            <span class="tag">&lt;<span class="name">tr</span> <span class="attr">style</span>=<span class="string">&quot;height: 28px;&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; pag.id &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://news.hut.edu.cn/&#123;&#123; pag.news_url &#125;&#125;&quot;</span>&gt;</span>&#123;&#123; pag.news_title &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; pag.news_date &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">nav</span> <span class="attr">aria-label</span>=<span class="string">&quot;Page navigation&quot;</span> <span class="attr">style</span>=<span class="string">&quot;text-align: center; width: 900px&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;pagination&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> &#123;% <span class="attr">if</span> <span class="attr">not</span> <span class="attr">page.has_previous</span> %&#125; <span class="attr">class</span>=<span class="string">&quot;disabled&quot;</span>&#123;% <span class="attr">endif</span> %&#125;&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> &#123;% <span class="attr">if</span> <span class="attr">page.has_previous</span> %&#125;<span class="attr">href</span>=<span class="string">&quot;?page=&#123;&#123; page.previous_page_number &#125;&#125;&quot;</span> &#123;% <span class="attr">endif</span> %&#125;</span></span><br><span class="line"><span class="tag">                   <span class="attr">aria-label</span>=<span class="string">&quot;Previous&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="symbol">&amp;laquo;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            &#123;% for index in page.paginator.page_range %&#125;</span><br><span class="line">                <span class="tag">&lt;<span class="name">li</span> &#123;% <span class="attr">if</span> <span class="attr">index</span> == <span class="string">page.number</span> %&#125;<span class="attr">class</span>=<span class="string">&quot;active&quot;</span>&#123;% <span class="attr">endif</span> %&#125;&gt;</span><span class="tag">&lt;<span class="name">a</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">href</span>=<span class="string">&quot;?page=&#123;&#123; index &#125;&#125;&quot;</span>&gt;</span>&#123;&#123; index &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> &#123;% <span class="attr">if</span> <span class="attr">not</span> <span class="attr">page.has_next</span> %&#125;<span class="attr">class</span>=<span class="string">&quot;disabled&quot;</span>&#123;% <span class="attr">endif</span> %&#125;&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> &#123;% <span class="attr">if</span> <span class="attr">page.has_next</span> %&#125;<span class="attr">href</span>=<span class="string">&quot;?page=&#123;&#123; page.next_page_number &#125;&#125;&quot;</span>&#123;% <span class="attr">endif</span> %&#125;</span></span><br><span class="line"><span class="tag">                   <span class="attr">aria-label</span>=<span class="string">&quot;Next&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="symbol">&amp;raquo;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        &lt;/div&gt;
+        &lt;div style=&quot;width: 100%&quot;&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; style=&quot;float: right&quot;&gt;搜索&lt;/button&gt;
+        &lt;/div&gt;
 
+    &lt;/form&gt;
+    &lt;table style=&quot;width: 90%; &quot;&gt;
+        &lt;tr style=&quot;height: 20px;font-size: large;font-family: &#39;Consolas&#39;, &#39;Monaco&#39;, &#39;Bitstream Vera Sans Mono&#39;, monospace&quot;&gt;
+            &lt;td style=&quot;width: 80px&quot;&gt;ID&lt;/td&gt;
+            &lt;td&gt;TITLE&lt;/td&gt;
+            &lt;td&gt;DATE&lt;/td&gt;
+            &#123;#        <td>delete</td>#&#125;
+        &lt;/tr&gt;
+        &#123;% for pag in page %&#125;
+            <tr style="height: 28px;">
+                <td>&#123;&#123; pag.id &#125;&#125;</td>
+                <td><a target="_blank" rel="noopener" href="http://news.hut.edu.cn/&#123;&#123; pag.news_url &#125;&#125;">&#123;&#123; pag.news_title &#125;&#125;</a></td>
+                <td>&#123;&#123; pag.news_date &#125;&#125;</td>
+            </tr>
+        &#123;% endfor %&#125;
+    &lt;/table&gt;
+
+    &lt;nav aria-label=&quot;Page navigation&quot; style=&quot;text-align: center; width: 900px&quot;&gt;
+        &lt;ul class=&quot;pagination&quot;&gt;
+            &lt;li &#123;% if not page.has_previous %&#125; class="disabled"&#123;% endif %&#125;&gt;
+                &lt;a &#123;% if page.has_previous %&#125;href="?page=&#123;&#123; page.previous_page_number &#125;&#125;" &#123;% endif %&#125;
+                   aria-label=&quot;Previous&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &#123;% for index in page.paginator.page_range %&#125;
+                <li &#123;% if index == page.number %&#125;class="active"&#123;% endif %&#125;><a
+                        href="?page=&#123;&#123; index &#125;&#125;">&#123;&#123; index &#125;&#125;</a>
+                </li>
+            &#123;% endfor %&#125;
+
+            &lt;li &#123;% if not page.has_next %&#125;class="disabled"&#123;% endif %&#125;&gt;
+                &lt;a &#123;% if page.has_next %&#125;href="?page=&#123;&#123; page.next_page_number &#125;&#125;"&#123;% endif %&#125;
+                   aria-label=&quot;Next&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <h6 id="页面截图"><a href="#页面截图" class="headerlink" title="页面截图"></a>页面截图</h6><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035405.png" alt="image-20211225200251904"></p>
-<h5 id="实现搜索"><a href="#实现搜索" class="headerlink" title="实现搜索"></a>实现搜索</h5><h6 id="python代码-1"><a href="#python代码-1" class="headerlink" title="python代码"></a>python代码</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Index</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="comment"># 首页搜索</span></span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">&#x27;index.html&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h5 id="实现搜索"><a href="#实现搜索" class="headerlink" title="实现搜索"></a>实现搜索</h5><h6 id="python代码-1"><a href="#python代码-1" class="headerlink" title="python代码"></a>python代码</h6><pre><code class="python">def Index(request):
+    # 首页搜索
+    return render(request, &#39;index.html&#39;)
+</code></pre>
+<h6 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h6><pre><code class="html">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;搜索&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+    &lt;meta name=&quot;keywords&quot;
+          content=&quot;Flat Search Box Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design&quot;/&gt;
+    &lt;!--Google Fonts--&gt;
+    &lt;link href=&#39;../static/css/index.css&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39; media=&quot;all&quot;&gt;
+    &lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot; crossorigin=&quot;anonymous&quot;&gt;
 
-<h6 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h6><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>搜索<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=utf-8&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=utf-8&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">content</span>=<span class="string">&quot;Flat Search Box Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design&quot;</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--Google Fonts--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&#x27;../static/css/index.css&#x27;</span> <span class="attr">rel</span>=<span class="string">&#x27;stylesheet&#x27;</span> <span class="attr">type</span>=<span class="string">&#x27;text/css&#x27;</span> <span class="attr">media</span>=<span class="string">&quot;all&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">integrity</span>=<span class="string">&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">integrity</span>=<span class="string">&quot;sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">integrity</span>=<span class="string">&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--Google Fonts--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;GET&quot;</span> <span class="attr">class</span>=<span class="string">&quot;form&quot;</span> <span class="attr">action</span>=<span class="string">&quot;search&quot;</span>&gt;</span></span><br><span class="line">    &#123;% csrf_token %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;bg-img &quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;../static/img/logo.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;新闻网logo&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-lg-12&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;input-group&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">class</span>=<span class="string">&quot;form-control&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Search for...&quot;</span> <span class="attr">name</span>=<span class="string">&quot;query&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;input-group-btn&quot;</span> <span class="attr">color</span>=<span class="string">rgb(0,</span> <span class="attr">108</span>, <span class="attr">190</span>)&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">&quot;btn btn-primary&quot;</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>Go!<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!-- /.row --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">        &#123;% <span class="keyword">if</span> error_msg %&#125;</span></span><br><span class="line"><span class="javascript">            <span class="function"><span class="title">alert</span>(<span class="params">&#123;&#123;error_msg&#125;&#125;</span>)</span></span></span><br><span class="line"><span class="javascript">        &#123;%  endif %&#125;</span></span><br><span class="line"><span class="javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    &lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;
+          integrity=&quot;sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ&quot; crossorigin=&quot;anonymous&quot;&gt;
 
+    &lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;!--Google Fonts--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form method=&quot;GET&quot; class=&quot;form&quot; action=&quot;search&quot;&gt;
+    &#123;% csrf_token %&#125;
+    &lt;div class=&quot;bg-img &quot;&gt;
+        &lt;img class=&quot;logo&quot; src=&quot;../static/img/logo.png&quot; alt=&quot;新闻网logo&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search for...&quot; name=&quot;query&quot;&gt;
+                &lt;span class=&quot;input-group-btn&quot; color=rgb(0, 108, 190)&gt;
+        &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Go!&lt;/button&gt;
+      &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+        &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
+    &lt;/div&gt;&lt;!-- /.row --&gt;
+    &lt;script&gt;
+        &#123;% if error_msg %&#125;
+            alert(&#123;&#123;error_msg&#125;&#125;)
+        &#123;%  endif %&#125;
+    &lt;/script&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <h6 id="页面截图-1"><a href="#页面截图-1" class="headerlink" title="页面截图"></a>页面截图</h6><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035533.png" alt="image-20211225200547302"></p>
-<h5 id="实现搜索结果展示"><a href="#实现搜索结果展示" class="headerlink" title="实现搜索结果展示"></a>实现搜索结果展示</h5><h6 id="python代码-2"><a href="#python代码-2" class="headerlink" title="python代码"></a>python代码</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Search</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="comment"># 搜索页面</span></span><br><span class="line">    query = request.GET.get(<span class="string">&quot;query&quot;</span>,<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    error_msg = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> query:</span><br><span class="line">        error_msg = <span class="string">&quot;请输入关键词&quot;</span></span><br><span class="line">        <span class="keyword">return</span> render(request, <span class="string">&#x27;search.html&#x27;</span>, &#123;<span class="string">&#x27;error_msg&#x27;</span>: error_msg&#125;)</span><br><span class="line">    <span class="keyword">if</span> query == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">        query = request.GET.get(<span class="string">&#x27;query&#x27;</span>)</span><br><span class="line">    news_list = NewsInfo.objects.<span class="built_in">filter</span>(news_title__contains=query)</span><br><span class="line">    length = news_list.__len__()</span><br><span class="line"></span><br><span class="line">    pag = Paginator(news_list,<span class="number">8</span>)</span><br><span class="line">    page = request.GET.get(<span class="string">&#x27;page&#x27;</span>)</span><br><span class="line">    page = pag.get_page(page)</span><br><span class="line">    context = &#123;</span><br><span class="line">        <span class="string">&#x27;news_list&#x27;</span>: news_list,</span><br><span class="line">        <span class="string">&#x27;value&#x27;</span>: query,</span><br><span class="line">        <span class="string">&#x27;length&#x27;</span>: length,</span><br><span class="line">        <span class="string">&#x27;page&#x27;</span>: page</span><br><span class="line">    &#125;</span><br><span class="line">    template = loader.get_template(<span class="string">&#x27;search.html&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(template.render(context, request))</span><br></pre></td></tr></table></figure>
+<h5 id="实现搜索结果展示"><a href="#实现搜索结果展示" class="headerlink" title="实现搜索结果展示"></a>实现搜索结果展示</h5><h6 id="python代码-2"><a href="#python代码-2" class="headerlink" title="python代码"></a>python代码</h6><pre><code class="python">def Search(request):
+    # 搜索页面
+    query = request.GET.get(&quot;query&quot;,&#39;&#39;)
+    error_msg = &#39;&#39;
+    if not query:
+        error_msg = &quot;请输入关键词&quot;
+        return render(request, &#39;search.html&#39;, &#123;&#39;error_msg&#39;: error_msg&#125;)
+    if query == &#39;&#39;:
+        query = request.GET.get(&#39;query&#39;)
+    news_list = NewsInfo.objects.filter(news_title__contains=query)
+    length = news_list.__len__()
 
-<h6 id="html代码-1"><a href="#html代码-1" class="headerlink" title="html代码"></a>html代码</h6><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>搜索结果<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;content-type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html;charset=utf-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;../static/css/search.css&quot;</span> <span class="attr">rel</span>=<span class="string">&#x27;stylesheet&#x27;</span> <span class="attr">type</span>=<span class="string">&#x27;text/css&#x27;</span> <span class="attr">media</span>=<span class="string">&quot;all&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">integrity</span>=<span class="string">&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">integrity</span>=<span class="string">&quot;sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">integrity</span>=<span class="string">&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 800px&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;GET&quot;</span> <span class="attr">class</span>=<span class="string">&quot;form&quot;</span> <span class="attr">action</span>=<span class="string">&quot;search&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 700px;margin: 0 auto&quot;</span>&gt;</span></span><br><span class="line">        &#123;% csrf_token %&#125;</span><br><span class="line">        &#123;#         django 用来防御跨站请求伪造（CSRF）攻击的机制。#&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;bg-img&quot;</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;../static/img/logo.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;新闻网logo&quot;</span> <span class="attr">style</span>=<span class="string">&quot;display: block; margin: 0 auto&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-lg-12&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;input-group&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">style</span>=<span class="string">&quot;height: 40px; width: 640px;&quot;</span> <span class="attr">class</span>=<span class="string">&quot;form-control&quot;</span> <span class="attr">ng-model</span>=<span class="string">&quot;query&quot;</span></span></span><br><span class="line"><span class="tag">                           <span class="attr">value</span>=<span class="string">&quot;&#123;&#123; value &#125;&#125;&quot;</span> <span class="attr">name</span>=<span class="string">&quot;query&quot;</span> <span class="attr">id</span>=<span class="string">&quot;query&quot;</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;input-group-btn&quot;</span> <span class="attr">color</span>=<span class="string">&#x27;rgb(0, 108, 190)&#x27;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">&quot;btn btn-primary&quot;</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Search&quot;</span> <span class="attr">id</span>=<span class="string">&quot;btn&quot;</span></span></span><br><span class="line"><span class="tag">                           <span class="attr">style</span>=<span class="string">&quot;height: 40px&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    &#123;% if length %&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align: right;font-size: large&quot;</span>&gt;</span></span><br><span class="line">            共有&#123;&#123; length &#125;&#125;条结果</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    &#123;% else %&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align: center;font-size: large&quot;</span>&gt;</span></span><br><span class="line">            没有查询到！</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://news.hut.edu.cn/&#123;&#123; p.news_url &#125;&#125;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>&#123;&#123; p.news_title &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span>&gt;</span>新闻日期：&#123;&#123; p.news_date &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">nav</span> <span class="attr">aria-label</span>=<span class="string">&quot;Page navigation&quot;</span> <span class="attr">style</span>=<span class="string">&quot;text-align: center&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;pagination&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> &#123;% <span class="attr">if</span> <span class="attr">not</span> <span class="attr">page.has_previous</span> %&#125; <span class="attr">class</span>=<span class="string">&quot;disabled&quot;</span>&#123;% <span class="attr">endif</span> %&#125;&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> &#123;% <span class="attr">if</span> <span class="attr">page.has_previous</span> %&#125;<span class="attr">href</span>=<span class="string">&quot;?page=&#123;&#123; page.previous_page_number &#125;&#125;&amp;query=&#123;&#123; value &#125;&#125;&quot;</span> &#123;% <span class="attr">endif</span> %&#125;</span></span><br><span class="line"><span class="tag">                   <span class="attr">aria-label</span>=<span class="string">&quot;Previous&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="symbol">&amp;laquo;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            &#123;% for index in page.paginator.page_range %&#125;</span><br><span class="line">                <span class="tag">&lt;<span class="name">li</span> &#123;% <span class="attr">if</span> <span class="attr">index</span> == <span class="string">page.number</span> %&#125;<span class="attr">class</span>=<span class="string">&quot;active&quot;</span>&#123;% <span class="attr">endif</span> %&#125;&gt;</span><span class="tag">&lt;<span class="name">a</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">href</span>=<span class="string">&quot;?page=&#123;&#123; index &#125;&#125;&amp;query=&#123;&#123; value &#125;&#125;&quot;</span>&gt;</span>&#123;&#123; index &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span> &#123;% <span class="attr">if</span> <span class="attr">not</span> <span class="attr">page.has_next</span> %&#125;<span class="attr">class</span>=<span class="string">&quot;disabled&quot;</span>&#123;% <span class="attr">endif</span> %&#125;&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> &#123;% <span class="attr">if</span> <span class="attr">page.has_next</span> %&#125;<span class="attr">href</span>=<span class="string">&quot;?page=&#123;&#123; page.next_page_number &#125;&#125;&amp;query=&#123;&#123; value &#125;&#125;&quot;</span>&#123;% <span class="attr">endif</span> %&#125;</span></span><br><span class="line"><span class="tag">                   <span class="attr">aria-label</span>=<span class="string">&quot;Next&quot;</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="symbol">&amp;raquo;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    pag = Paginator(news_list,8)
+    page = request.GET.get(&#39;page&#39;)
+    page = pag.get_page(page)
+    context = &#123;
+        &#39;news_list&#39;: news_list,
+        &#39;value&#39;: query,
+        &#39;length&#39;: length,
+        &#39;page&#39;: page
+    &#125;
+    template = loader.get_template(&#39;search.html&#39;)
+    return HttpResponse(template.render(context, request))
+</code></pre>
+<h6 id="html代码-1"><a href="#html代码-1" class="headerlink" title="html代码"></a>html代码</h6><pre><code class="html">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;搜索结果&lt;/title&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link href=&quot;../static/css/search.css&quot; rel=&#39;stylesheet&#39; type=&#39;text/css&#39; media=&quot;all&quot;&gt;
+    &lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;!-- 可选的 Bootstrap 主题文件（一般不用引入） --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css&quot;
+          integrity=&quot;sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;container&quot; style=&quot;width: 800px&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;form method=&quot;GET&quot; class=&quot;form&quot; action=&quot;search&quot; style=&quot;width: 700px;margin: 0 auto&quot;&gt;
+        &#123;% csrf_token %&#125;
+        &#123;#         django 用来防御跨站请求伪造（CSRF）攻击的机制。#&#125;
+        &lt;div class=&quot;bg-img&quot; &gt;
+            &lt;img class=&quot;logo&quot; src=&quot;../static/img/logo.png&quot; alt=&quot;新闻网logo&quot; style=&quot;display: block; margin: 0 auto&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-lg-12&quot;&gt;
+                &lt;div class=&quot;input-group&quot;&gt;
+                    &lt;input type=&quot;text&quot; style=&quot;height: 40px; width: 640px;&quot; class=&quot;form-control&quot; ng-model=&quot;query&quot;
+                           value=&quot;&#123;&#123; value &#125;&#125;&quot; name=&quot;query&quot; id=&quot;query&quot;/&gt;
+                    &lt;span class=&quot;input-group-btn&quot; color=&#39;rgb(0, 108, 190)&#39;&gt;
+                    &lt;input class=&quot;btn btn-primary&quot; role=&quot;button&quot; type=&quot;submit&quot; value=&quot;Search&quot; id=&quot;btn&quot;
+                           style=&quot;height: 40px&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/form&gt;
+
+    &lt;br&gt;
+    &#123;% if length %&#125;
+        <br>
+        <p style="text-align: right;font-size: large">
+            共有&#123;&#123; length &#125;&#125;条结果
+        </p>
+    &#123;% else %&#125;
+        <p style="text-align: center;font-size: large">
+            没有查询到！
+        </p>
+    &#123;% endif %&#125;
+
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;div id=&quot;box&quot;&gt;
+            &lt;p&gt;&lt;a href=&quot;http://news.hut.edu.cn/&#123;&#123; p.news_url &#125;&#125;&quot; target=&quot;_blank&quot;&gt;&#123;&#123; p.news_title &#125;&#125;&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;新闻日期：&#123;&#123; p.news_date &#125;&#125;&lt;/p&gt;
+            &lt;br&gt;
+        &#123;% endfor %&#125;
+    &lt;/div&gt;
+
+    &lt;nav aria-label=&quot;Page navigation&quot; style=&quot;text-align: center&quot;&gt;
+        &lt;ul class=&quot;pagination&quot;&gt;
+            &lt;li &#123;% if not page.has_previous %&#125; class="disabled"&#123;% endif %&#125;&gt;
+                &lt;a &#123;% if page.has_previous %&#125;href="?page=&#123;&#123; page.previous_page_number &#125;&#125;&query=&#123;&#123; value &#125;&#125;" &#123;% endif %&#125;
+                   aria-label=&quot;Previous&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &#123;% for index in page.paginator.page_range %&#125;
+                <li &#123;% if index == page.number %&#125;class="active"&#123;% endif %&#125;><a
+                        href="?page=&#123;&#123; index &#125;&#125;&query=&#123;&#123; value &#125;&#125;">&#123;&#123; index &#125;&#125;</a>
+                </li>
+            &#123;% endfor %&#125;
+
+            &lt;li &#123;% if not page.has_next %&#125;class="disabled"&#123;% endif %&#125;&gt;
+                &lt;a &#123;% if page.has_next %&#125;href="?page=&#123;&#123; page.next_page_number &#125;&#125;&query=&#123;&#123; value &#125;&#125;"&#123;% endif %&#125;
+                   aria-label=&quot;Next&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <h6 id="页面截图-2"><a href="#页面截图-2" class="headerlink" title="页面截图"></a>页面截图</h6><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111035845.png" alt="image-20211225200802707"></p>
 <blockquote>
 <h4 id="页面分页"><a href="#页面分页" class="headerlink" title="页面分页"></a>页面分页</h4><p>上面基本就实现了我需要的搜索引擎的功能，发现页面搜索结果都展示在一个页面，不便查看，上网找到可以通过使用Paginator实现分页。代码都在上面，不在赘述。累die~</p>
 </blockquote>
-</div><div class="tags"><a href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fa fa-tag"></i>笔记</a></div><div class="post-nav"><a class="pre" href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">Docker+Calibre-web搭建个人图书馆</a><a class="next" href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">python爬虫02</a></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=1.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=1.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=1.0.0"></script><script>var gitalk = new Gitalk({
-  clientID: 'd993f69739800ba22272',
-  clientSecret: '96ffea01b2b4b0b1059067cf0b1680f61f8b91f0',
-  repo: 'blogtalk',
-  owner: 'murentutu',
-  admin: ['murentutu'],
-  id: md5(location.pathname),
-  distractionFreeMode: false
-})
-gitalk.render('container')
-</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://murentutu.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">AI数学基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/">《统计学习方法》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px;">测试</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">笔记</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%88%86%E6%9E%90/" style="font-size: 15px;">网络协议分析</a> <a href="/tags/little-talk/" style="font-size: 15px;">little talk</a> <a href="/tags/Docker/" style="font-size: 15px;">Docker</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">Docker+Calibre-web搭建个人图书馆</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">python爬虫02</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">python爬虫01</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/01/12%E6%9C%88/">12月</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">网协复习-第二章</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">最大子序和-Leetcode</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">Java Set.add()方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/">Numpy简易入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/">第2章 感知机</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.cnblogs.com/murentutu/" title="murentutu" target="_blank">murentutu</a><ul></ul><a href="http://duitutu.cn/" title="Du1L0v3" target="_blank">Du1L0v3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">murentutu.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+
+	
+	<span id="/2021/12/25/python%E7%88%AC%E8%99%AB03/" class="leancloud-visitors view" data-flag-title="python爬虫03">
+		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
+	</span>
+	
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+    
+    <a href="/2022/05/11/Docker-Calibre-web搭建个人图书馆/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> 上一页</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2021/12/22/python爬虫02/" type="button" class="btn btn-default ">下一页<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--
+<section id="comment">
+    <h2 class="title">留言</h2>
+
+    
+</section>
+
+-->
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2021-12-25 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/笔记/">笔记<span>6</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+		
+
+	</div>
+	
+		
+
+</div><!-- row -->
+
+<!--
+ -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2022 murentutu's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

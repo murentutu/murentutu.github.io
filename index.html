@@ -1,18 +1,1075 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="You should strive for self-improvement."><title>murentutu | You should strive for self-improvement.</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">murentutu</h1><a id="logo" href="/.">murentutu</a><p class="description">You should strive for self-improvement.</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">Docker+Calibre-web搭建个人图书馆</a></h1><div class="post-meta">2022-05-11</div><div class="post-content"><h3 id="使用docker搭建个人图书馆"><a href="#使用docker搭建个人图书馆" class="headerlink" title="使用docker搭建个人图书馆"></a>使用docker搭建个人图书馆</h3><h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><ol></div><p class="readmore"><a href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a></h1><div class="post-meta">2021-12-25</div><div class="post-content"><blockquote>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>murentutu</title>
+  <meta name="author" content="murentutu">
+  
+  <meta name="description" content="You should strive for self-improvement.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="murentutu"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="murentutu" type="application/atom+xml">
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">murentutu</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <div class="page-header logo">
+  <h1>You should strive for self-improvement.<span class="blink-fast">|</span></h1>
+</div>
+
+<div class="row page">
+
+	
+	<div class="col-md-9">
+	
+
+		<div class="slogan">
+
+
+		<i class="fa fa-heart blink-slow"></i>
+
+		wubba lubba dub dub.
+
+</div>    
+
+		<div id="top_search"></div>
+		<div class="mypage">
+		
+		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2022/05/11/Docker-Calibre-web搭建个人图书馆/" >Docker+Calibre-web搭建个人图书馆</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2022-05-11  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<h3 id="使用docker搭建个人图书馆"><a href="#使用docker搭建个人图书馆" class="headerlink" title="使用docker搭建个人图书馆"></a>使用docker搭建个人图书馆</h3><h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><ol>
+<li><p>更新yum</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029309.png" alt="image-20220511002933547"></p>
+</li>
+<li><p>安装需要的软件包</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029983.png" alt="image-20220511003259831"></p>
+</li>
+<li><p>设置yum源</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029982.png" alt="image-20220511003452579"></p>
+</li>
+<li><p>查看所有仓库中的docker版本，选择特定版本安装。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029856.png" alt="image-20220511004024228"></p>
+</li>
+<li><p>启动并加入开机启动</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029988.png" alt="image-20220511004121584"></p>
+</li>
+<li><p>验证安装是否成功</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030003.png" alt="image-20220511004239257"></p>
+</li>
+<li><p>安装配置文件，输入 vim  /etc/sysctl.conf 打开配置文件，Calibre-Web 需要开启IPv4转发，CentOS默认不支持IPv4转发。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030190.png" alt="image-20220511004744569"></p>
+</li>
+<li><p>激活配置文件</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com//murentutu/cloudimages202205111027209.png" alt="image-20220511004841273"></p>
+</li>
+</ol>
+<h4 id="拉取calibre镜像"><a href="#拉取calibre镜像" class="headerlink" title="拉取calibre镜像"></a>拉取calibre镜像</h4><ol>
+<li><p>使用<a target="_blank" rel="noopener" href="https://hub.docker.com/r/technosoft2000/calibre-web">technosoft2000/calibre-web</a>镜像</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030366.png" alt="image-20220511005507222"></p>
+</li>
+<li><p>启动calibre-web</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com//murentutu/cloudimages202205111027396.png" alt="image-20220511005611314"></p>
+</li>
+<li><p>要启动calibre-web，有一个关键的依赖是metadata.db文件，没有这个文件calibre-web无法正常运行。打开本地电脑calibre客户端软件，查看书库的目录。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030763.png" alt="image-20220511010109933"></p>
+</li>
+<li><p>到对应路径下，找到metadata.db文件，将其上传到/data/caliber/books目录下。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030527.png" alt="image-20220511010355217"></p>
+</li>
+<li><p>为了数据库配置能够正常写入，我们需要给/data/calibre 目录设置为可写入的权限</p>
+<pre><code class="linux">chmod -R 777 /data/calibre/*
+</code></pre>
+</li>
+<li><p>登录calibre-web，浏览器访问ip地址，默认的用户名为admin，密码为admin123</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030897.png" alt="image-20220511010605535"></p>
+</li>
+<li><p>配置书库地址为/books,然后点击保存</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030444.png" alt="image-20220511010858419"></p>
+</li>
+<li><p>点击admin，修改语言为中文，记得在最下面点击save进行保存</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030833.png" alt="image-20220511010946844"></p>
+</li>
+<li><p>上传书籍和在线阅读</p>
+<p>点击管理权限-&gt;编辑基本配置-&gt;基本配置-&gt;启动上传-&gt;保存</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030823.png" alt="image-20220511011240782">              </p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com//murentutu/cloudimages202205111027687.png" alt="image-20220511011348412"></p>
+</li>
+<li><p>配置启动上传后，就可以将我们本地的电子书上传到服务器中</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030238.png" alt="image-20220511011529788"></p>
+</li>
+<li><p>选择本地的一本电子书</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030791.png" alt="image-20220511011701948"></p>
+</li>
+<li><p>calibre-web会自动提取电子书中的元数据</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030047.png" alt="image-20220511011816841"></p>
+</li>
+<li><p>之后的操作和客户端calibre类似，就不细说了。</p>
+</li>
+</ol>
+
+	
+
+	</div>
+  <a type="button" href="/2022/05/11/Docker-Calibre-web搭建个人图书馆/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<h3 id="使用docker搭建个人图书馆"><a href="#使用docker搭建个人图书馆" class="headerlink" title="使用docker搭建个人图书馆"></a>使用docker搭建个人图书馆</h3><h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><ol>
+<li><p>更新yum</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029309.png" alt="image-20220511002933547"></p>
+</li>
+<li><p>安装需要的软件包</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029983.png" alt="image-20220511003259831"></p>
+</li>
+<li><p>设置yum源</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029982.png" alt="image-20220511003452579"></p>
+</li>
+<li><p>查看所有仓库中的docker版本，选择特定版本安装。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029856.png" alt="image-20220511004024228"></p>
+</li>
+<li><p>启动并加入开机启动</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111029988.png" alt="image-20220511004121584"></p>
+</li>
+<li><p>验证安装是否成功</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030003.png" alt="image-20220511004239257"></p>
+</li>
+<li><p>安装配置文件，输入 vim  /etc/sysctl.conf 打开配置文件，Calibre-Web 需要开启IPv4转发，CentOS默认不支持IPv4转发。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030190.png" alt="image-20220511004744569"></p>
+</li>
+<li><p>激活配置文件</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com//murentutu/cloudimages202205111027209.png" alt="image-20220511004841273"></p>
+</li>
+</ol>
+<h4 id="拉取calibre镜像"><a href="#拉取calibre镜像" class="headerlink" title="拉取calibre镜像"></a>拉取calibre镜像</h4><ol>
+<li><p>使用<a target="_blank" rel="noopener" href="https://hub.docker.com/r/technosoft2000/calibre-web">technosoft2000/calibre-web</a>镜像</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030366.png" alt="image-20220511005507222"></p>
+</li>
+<li><p>启动calibre-web</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com//murentutu/cloudimages202205111027396.png" alt="image-20220511005611314"></p>
+</li>
+<li><p>要启动calibre-web，有一个关键的依赖是metadata.db文件，没有这个文件calibre-web无法正常运行。打开本地电脑calibre客户端软件，查看书库的目录。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030763.png" alt="image-20220511010109933"></p>
+</li>
+<li><p>到对应路径下，找到metadata.db文件，将其上传到/data/caliber/books目录下。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030527.png" alt="image-20220511010355217"></p>
+</li>
+<li><p>为了数据库配置能够正常写入，我们需要给/data/calibre 目录设置为可写入的权限</p>
+<pre><code class="linux">chmod -R 777 /data/calibre/*
+</code></pre>
+</li>
+<li><p>登录calibre-web，浏览器访问ip地址，默认的用户名为admin，密码为admin123</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030897.png" alt="image-20220511010605535"></p>
+</li>
+<li><p>配置书库地址为/books,然后点击保存</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030444.png" alt="image-20220511010858419"></p>
+</li>
+<li><p>点击admin，修改语言为中文，记得在最下面点击save进行保存</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030833.png" alt="image-20220511010946844"></p>
+</li>
+<li><p>上传书籍和在线阅读</p>
+<p>点击管理权限-&gt;编辑基本配置-&gt;基本配置-&gt;启动上传-&gt;保存</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030823.png" alt="image-20220511011240782">              </p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com//murentutu/cloudimages202205111027687.png" alt="image-20220511011348412"></p>
+</li>
+<li><p>配置启动上传后，就可以将我们本地的电子书上传到服务器中</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030238.png" alt="image-20220511011529788"></p>
+</li>
+<li><p>选择本地的一本电子书</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030791.png" alt="image-20220511011701948"></p>
+</li>
+<li><p>calibre-web会自动提取电子书中的元数据</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111030047.png" alt="image-20220511011816841"></p>
+</li>
+<li><p>之后的操作和客户端calibre类似，就不细说了。</p>
+</li>
+</ol>
+
+	
+	</div>
+  <a type="button" href="/2022/05/11/Docker-Calibre-web搭建个人图书馆/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/12/25/python爬虫03/" >python爬虫03</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-12-25  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<blockquote>
 <p>上次将爬虫的数据完善了几个功能，爬取多页、去重，存储数据库等。</p>
 <p>要做一个搜索引擎，数据我有了，接下来需要把数据传到前端的页面去，并且将要搜索的内容和数据库匹配得到之后返回到页面上。基本上就是这么一个步骤。</p>
 </blockquote>
-<p>后端这边使用的是Django，前端比较简单，大概用到了bootstrap的表单以及分页等。</p></div><p class="readmore"><a href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">python爬虫02</a></h1><div class="post-meta">2021-12-22</div><div class="post-content"><blockquote>
+<p>后端这边使用的是Django，前端比较简单，大概用到了bootstrap的表单以及分页等。</p>
+<h4 id="01-新建一个Django项目-Creating-a-project"><a href="#01-新建一个Django项目-Creating-a-project" class="headerlink" title="01 新建一个Django项目(Creating a project)"></a>01 新建一个Django项目(Creating a project)</h4><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034655.png" alt="image-20211225161319716"></p>
+<p>pycharm可以直接创建，选择创建后会自动下载一些东西，需要一点点时间。</p>
+<p>也可以采用Django官方文档上的步骤，在需要创建的项目目录下命令行输入</p>
+<pre><code class="python">$ django-admin startproject mysite
+</code></pre>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034999.png" alt="image-20211225161530144"></p>
+<p>项目创建完以后的目录结构如下：</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034717.png" alt="image-20211225161633663"></p>
+	
+
+	</div>
+  <a type="button" href="/2021/12/25/python爬虫03/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<blockquote>
+<p>上次将爬虫的数据完善了几个功能，爬取多页、去重，存储数据库等。</p>
+<p>要做一个搜索引擎，数据我有了，接下来需要把数据传到前端的页面去，并且将要搜索的内容和数据库匹配得到之后返回到页面上。基本上就是这么一个步骤。</p>
+</blockquote>
+<p>后端这边使用的是Django，前端比较简单，大概用到了bootstrap的表单以及分页等。</p>
+<h4 id="01-新建一个Django项目-Creating-a-project"><a href="#01-新建一个Django项目-Creating-a-project" class="headerlink" title="01 新建一个Django项目(Creating a project)"></a>01 新建一个Django项目(Creating a project)</h4><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034655.png" alt="image-20211225161319716"></p>
+<p>pycharm可以直接创建，选择创建后会自动下载一些东西，需要一点点时间。</p>
+<p>也可以采用Django官方文档上的步骤，在需要创建的项目目录下命令行输入</p>
+<pre><code class="python">$ django-admin startproject mysite
+</code></pre>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034999.png" alt="image-20211225161530144"></p>
+<p>项目创建完以后的目录结构如下：</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111034717.png" alt="image-20211225161633663"></p>
+	
+	</div>
+  <a type="button" href="/2021/12/25/python爬虫03/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/12/22/python爬虫02/" >python爬虫02</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-12-22  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<blockquote>
 <p>记录一下这两天的成果。书接上回~</p>
 </blockquote>
 <p>上次我成功地爬取到了咱湖工大的新闻网站，将每一个新闻的url链接、新闻标题、以及新闻发布的日期存取到了一个NewsTitle.txt中。</p>
-<p>接下来呢，我遇到了一个接一个的问题。。</p></div><p class="readmore"><a href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">python爬虫01</a></h1><div class="post-meta">2021-12-21</div><div class="post-content"><p>最好的学习网站——官方文档，很nice！<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037421.png" alt="image-20211221201426970"></p></div><p class="readmore"><a href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/12/01/12%E6%9C%88/">12月</a></h1><div class="post-meta">2021-12-01</div><div class="post-content">Here's something encrypted, password is required to continue reading.</div><p class="readmore"><a href="/2021/12/01/12%E6%9C%88/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">网协复习-第二章</a></h1><div class="post-meta">2021-11-29</div><div class="post-content"><p>一章节的内容。。。</p>
+<p>接下来呢，我遇到了一个接一个的问题。。</p>
+<h4 id="问题01-如何爬取网页的多页数据"><a href="#问题01-如何爬取网页的多页数据" class="headerlink" title="问题01 如何爬取网页的多页数据"></a>问题01 如何爬取网页的多页数据</h4><p>通常，网页是会进行分页的。俺们的HUT新闻网站同样如此，我看了一下，最早的新闻大概是从2013年开始的，显然这些新闻不会放在同一页的，这时，如何去爬取多页的内容呢？</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036325.png" alt="image-20211223210048484"></p>
+<p>像俺们的湖工大新闻网，就有足足100页的新闻。</p>
+<p>聪明的人当然会想到，这些页面一定会存在某些联系，那要不然写代码的人不得累死。</p>
+<p>如此，就观察一下他们的地址呗。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036444.png" alt="image-20211223210254962"></p>
+	
+
+	</div>
+  <a type="button" href="/2021/12/22/python爬虫02/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<blockquote>
+<p>记录一下这两天的成果。书接上回~</p>
+</blockquote>
+<p>上次我成功地爬取到了咱湖工大的新闻网站，将每一个新闻的url链接、新闻标题、以及新闻发布的日期存取到了一个NewsTitle.txt中。</p>
+<p>接下来呢，我遇到了一个接一个的问题。。</p>
+<h4 id="问题01-如何爬取网页的多页数据"><a href="#问题01-如何爬取网页的多页数据" class="headerlink" title="问题01 如何爬取网页的多页数据"></a>问题01 如何爬取网页的多页数据</h4><p>通常，网页是会进行分页的。俺们的HUT新闻网站同样如此，我看了一下，最早的新闻大概是从2013年开始的，显然这些新闻不会放在同一页的，这时，如何去爬取多页的内容呢？</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036325.png" alt="image-20211223210048484"></p>
+<p>像俺们的湖工大新闻网，就有足足100页的新闻。</p>
+<p>聪明的人当然会想到，这些页面一定会存在某些联系，那要不然写代码的人不得累死。</p>
+<p>如此，就观察一下他们的地址呗。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036444.png" alt="image-20211223210254962"></p>
+	
+	</div>
+  <a type="button" href="/2021/12/22/python爬虫02/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/12/21/python爬虫01/" >python爬虫01</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-12-21  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<p>最好的学习网站——官方文档，很nice！<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037421.png" alt="image-20211221201426970"></p>
+<h4 id="学习爬虫第一步——python基础知识"><a href="#学习爬虫第一步——python基础知识" class="headerlink" title="学习爬虫第一步——python基础知识"></a>学习爬虫第一步——python基础知识</h4><p>​    这个就不多说啥了，一直在学python基础。</p>
+<h4 id="学习爬虫第二步——python相关库"><a href="#学习爬虫第二步——python相关库" class="headerlink" title="学习爬虫第二步——python相关库"></a>学习爬虫第二步——python相关库</h4><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037720.png" alt="image-20211221201743685"></p>
+<p>官方文档上找到http.client</p>
+<h6 id="HTTPConnection对象"><a href="#HTTPConnection对象" class="headerlink" title="HTTPConnection对象"></a>HTTPConnection对象</h6><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037183.png" alt="image-20211221202105994"></p>
+<p>HTTPConnetcion代表和HTTP的一个连接，它的实例化需要传入一个主机和可选的端口号。如果没有传入端口号，首先会尝试从传入的主机字符串中提取出端口号，没有则使用默认的端口号。</p>
+<pre><code class="python">conn = http.client.HTTPConnection(&#39;news.hut.edu.cn&#39;)    # 参数主机不需要填入http://
+</code></pre>
+	
+
+	</div>
+  <a type="button" href="/2021/12/21/python爬虫01/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<p>最好的学习网站——官方文档，很nice！<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037421.png" alt="image-20211221201426970"></p>
+<h4 id="学习爬虫第一步——python基础知识"><a href="#学习爬虫第一步——python基础知识" class="headerlink" title="学习爬虫第一步——python基础知识"></a>学习爬虫第一步——python基础知识</h4><p>​    这个就不多说啥了，一直在学python基础。</p>
+<h4 id="学习爬虫第二步——python相关库"><a href="#学习爬虫第二步——python相关库" class="headerlink" title="学习爬虫第二步——python相关库"></a>学习爬虫第二步——python相关库</h4><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037720.png" alt="image-20211221201743685"></p>
+<p>官方文档上找到http.client</p>
+<h6 id="HTTPConnection对象"><a href="#HTTPConnection对象" class="headerlink" title="HTTPConnection对象"></a>HTTPConnection对象</h6><p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037183.png" alt="image-20211221202105994"></p>
+<p>HTTPConnetcion代表和HTTP的一个连接，它的实例化需要传入一个主机和可选的端口号。如果没有传入端口号，首先会尝试从传入的主机字符串中提取出端口号，没有则使用默认的端口号。</p>
+<pre><code class="python">conn = http.client.HTTPConnection(&#39;news.hut.edu.cn&#39;)    # 参数主机不需要填入http://
+</code></pre>
+	
+	</div>
+  <a type="button" href="/2021/12/21/python爬虫01/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/12/01/12月/" >12月</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-12-01  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="de37defed90ebf1d68d974dc8be39390cb679e6126cce70661457da8936b7716">f35163d977188b9320662a61882c61754cf1f27d8ad80e380e584e5aba83ae5c5a27ceaa86c9b5797de1cd3233041fca829e0307da5dc1765bf9349aaa867db713cfe46f9673a697d301acaf7a261e7dc486add004847eae8c8398aea638217867192920bae17d0508398f88c69853c4cfc92277c9cf20b4fd5c5cff6994def8b81d5ab6eef23de20cbdd320f44ace1d580a38cada40d98e3e4e58c643058f29bc3bdc5f4475340310602b550036f973101fa2d227bf3603f2e2966fee12ba3aa1034d37f88ef1dfca22376107508551ea44064d3c3a74cdf9f71f03d0b8772bda64838c7f9e3250dac03f0cb88484b5a3bd5f0b5f66e36e06a0a5c50f2e32aa0ad1f0381bf83382ad01d71d37653e6ae79d8f68aadebc0314f69cacb0f01940722263a25975c3c23d471997b8271c1ebc3fb8871b9bd7c2f3c57f4f1e8156742983f6581db08380d569cbf49ef02731b1b2da0d03b0e9647c3fb3dc5ce73333722d6df5b232246dcf0174af793e4abd3e0d5fa1a799be12b209891d888b5aa1ac694bc23841d377cba64fa689bb91ac7d33dd235f61c1bc1235643f7cabfe34eb9f704ac78112c1c8ca84b633337b0074b60de4cd087fb245f14245357128e902aa0cf2bcfe24da4520d9d8874a1be336265851002f6eba322c88c25814b40fa4a1eeaf3cbbbee8656b8069f3d73cad6f2be70b4f37cf419cad6d37691c914aab044c61a1737b923439606d7d96dca204a9b6f01750c4959f756540a10bd9c6162873b7b967fc8705395f5c49dabf15141d8885c0e0c38d7a2a01866e5dc8fc85e2049a4b482198bd68e5ac9a75c3c99acdd402f15e6b2914c6510d9f2230d334fe12bd6cce5902640c3084f917a2875fb948cd048edd46ee75c24cbb5b483a0391e01d6236ff79b5be812e56ba20c0b6377690fcd6e3afe25336602e98a4284ba84d5195d1c9e2355d7cb3a5257b755456a9fe68ed12f81496be35fdc1f525184519d16fd4a9fe6ee9d81d8df31fbc60a10fa30d081b6e0b995f5bb3bcec1d4cfd88880cd0e58def0be911aba382172038d34ffb75db24ff1d2382bfd8a1a4926e2e2a95ee74e39b9efbccadc4dca2b6a8c4facdadefa939ca336a5b8546639be10a5fe040336566be3d8fdcc55a7b8c6446a67ce4c30cd416e4b7f2f26bf8e95bcdd3498fe6a96651b8d861922d18116a8d2223226fa379d5fce8443cb2ac58a6131ff720f7ad7b3829b626b1d113d9785afec51ee24d91f8081119e66f87ec469d1736666c0fa9a6ede8f621790db7f3c31170921497a4cc57b8a4d5491a7e4206c117b3f626d857f08d3bcbce866dccb2ccace9298af197aae93c5e5c902413c3437ee2363062e59aefac3a2e03ff2f95029b5db87bdbc29a9f6f999f5d6ec6846619cb4088bc805c718c23ef0c60201c0143fc36f33013c0e97fae073bc8c83007cd9750c23abdf428a014e926cbf92fc3152c5093634a353b6c7327ca6540cede5f32e0b029e14d67a24300d9e5816bd3d898563a94da2c4332bc13103a9f7e19e3fe425b085ae4ff35fa6f7db4d8fcbf5a0fe8f2686a0fe664084cb2a29284cd3348e1d1183562df56c41a7221bc34dc1195940c6a6d14ed601804a3c476132a3cc56c07db9ab2b0194d5081fe5f79c258678bfcf89fc5623df654ac32ad37b066ca7ec8715722337b8541585dac54357849c014d384b6c339c1764753af3df05aba169404f34a13949a4a4f6a6cc47ce2343cb5341c953515e79ee1bde3ef6e8cf22e2bb57032771946d01f8596a97109656113c72860027cee7b4d41d4f5832c9f35d07b8f0a8e30a42d907508657be148a1f0f0ab43e5809973f368ddf7acb276d28df043420cbe9ce3b524465eb0843b9ba1c793112cdf47d67d22cebd146e3ee9e6eb309049e62903a20a967ad239778f4a6cb48e8650cd2b414f2d0fd483799684ab5d1a36fbc43c8c0e7345dfaf57ab6812d41364388c2e06216fb3d301cdd4f55e4b3e3c93b4b7c848324f273cb115d37045907b8a248df1060ba4559d6fad12e1404605fe4843389ac8a77c7b2537ae4e4eccd645d465bab2001dee1486804db80771a626093e4e629b8d6db48ab3cafd265cca702ca9edc811ef868bd5149bce9b839d8dc832bd2be123540527808731c68343731dee22f0338c3a64e9922958f78f7e75d6ab59c678aca7168cf761010fd9ac8cd66f01eaae814d4bb0fc264bfeae11776ff1086c81450ae5763381cfd15a266ee365ebcfc60b07f9ab65d1b8c8c6e3dbd0970237fccba20653da1176e5a9c2f1d2c43d1526bb484561951f394d2e18b63c37fd74a42625305aaf44b71bd827c90fbec069eda9be0cf0261119b7b49917d750b947aa5fef475d90a99abb2cd4e50e54a7b1ab8f722832c2e46eb87a35a9691f2701befda17527a0509ae01994b5aa1d43ed5c0bb763bc64601e505e74347480a07ffa5d2b5e5d99ef1a2120769ceae0560c2cd550cf91d55fbd928c0b1dd19feff41f9d6fda941f8ff3e4c154c7299660d23c1bdbc34946318b977aa2a18a5cd1b42a76a63a64f14d76158c88586391e515d340634e15dd8efc550a9085664c740ab1378b7fcd4bfb99fe2d9ddf2f72dc52710d502c203a3dd93706883ed0dea9efcd8433d5d0c229e4b2ad62c01905c04757347f51b4b1e51a75e57531bd6e96a2fba2dec833eebe2f0ff3b9ffab7c88efebfbd69dc06755a0e88009fe7521e7b7afb34c193016c70b2a25e98b1c9de3a3b5ba579ca379c258ab1ae7f17b16070cb63cdc1b0d759a166d313662ee7099863e66593ddba465d3bc2735072b959e53cf5b4117bac0f2864ae2e1f52647f70e260909c42bfb8f4668c5c55aea742a05c12de4174907413ef8b61395ebc87e9f50b90e2d89e8989bfbeea8fef95d7f6f580de50073d226923d1cffe361aac6e5f262a08767eef5254eddea42d11e1b777676dfb25f7df5139ce864f5fb30c4f7dbec6590d7f38b904431bea583385a5dd89c69922bde8dcdb741fd5153ff0920f75ee6bc56741e5b1f1fc8bfcae2a00cad0f1f212f0d715f96e71e089b96bfa8edd455796ca8ffdd3808787cf632320070146dd3a3551b2b83522a3023e50b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+	
+
+	</div>
+  <a type="button" href="/2021/12/01/12月/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="de37defed90ebf1d68d974dc8be39390cb679e6126cce70661457da8936b7716">f35163d977188b9320662a61882c61754cf1f27d8ad80e380e584e5aba83ae5c5a27ceaa86c9b5797de1cd3233041fca829e0307da5dc1765bf9349aaa867db713cfe46f9673a697d301acaf7a261e7dc486add004847eae8c8398aea638217867192920bae17d0508398f88c69853c4cfc92277c9cf20b4fd5c5cff6994def8b81d5ab6eef23de20cbdd320f44ace1d580a38cada40d98e3e4e58c643058f29bc3bdc5f4475340310602b550036f973101fa2d227bf3603f2e2966fee12ba3aa1034d37f88ef1dfca22376107508551ea44064d3c3a74cdf9f71f03d0b8772bda64838c7f9e3250dac03f0cb88484b5a3bd5f0b5f66e36e06a0a5c50f2e32aa0ad1f0381bf83382ad01d71d37653e6ae79d8f68aadebc0314f69cacb0f01940722263a25975c3c23d471997b8271c1ebc3fb8871b9bd7c2f3c57f4f1e8156742983f6581db08380d569cbf49ef02731b1b2da0d03b0e9647c3fb3dc5ce73333722d6df5b232246dcf0174af793e4abd3e0d5fa1a799be12b209891d888b5aa1ac694bc23841d377cba64fa689bb91ac7d33dd235f61c1bc1235643f7cabfe34eb9f704ac78112c1c8ca84b633337b0074b60de4cd087fb245f14245357128e902aa0cf2bcfe24da4520d9d8874a1be336265851002f6eba322c88c25814b40fa4a1eeaf3cbbbee8656b8069f3d73cad6f2be70b4f37cf419cad6d37691c914aab044c61a1737b923439606d7d96dca204a9b6f01750c4959f756540a10bd9c6162873b7b967fc8705395f5c49dabf15141d8885c0e0c38d7a2a01866e5dc8fc85e2049a4b482198bd68e5ac9a75c3c99acdd402f15e6b2914c6510d9f2230d334fe12bd6cce5902640c3084f917a2875fb948cd048edd46ee75c24cbb5b483a0391e01d6236ff79b5be812e56ba20c0b6377690fcd6e3afe25336602e98a4284ba84d5195d1c9e2355d7cb3a5257b755456a9fe68ed12f81496be35fdc1f525184519d16fd4a9fe6ee9d81d8df31fbc60a10fa30d081b6e0b995f5bb3bcec1d4cfd88880cd0e58def0be911aba382172038d34ffb75db24ff1d2382bfd8a1a4926e2e2a95ee74e39b9efbccadc4dca2b6a8c4facdadefa939ca336a5b8546639be10a5fe040336566be3d8fdcc55a7b8c6446a67ce4c30cd416e4b7f2f26bf8e95bcdd3498fe6a96651b8d861922d18116a8d2223226fa379d5fce8443cb2ac58a6131ff720f7ad7b3829b626b1d113d9785afec51ee24d91f8081119e66f87ec469d1736666c0fa9a6ede8f621790db7f3c31170921497a4cc57b8a4d5491a7e4206c117b3f626d857f08d3bcbce866dccb2ccace9298af197aae93c5e5c902413c3437ee2363062e59aefac3a2e03ff2f95029b5db87bdbc29a9f6f999f5d6ec6846619cb4088bc805c718c23ef0c60201c0143fc36f33013c0e97fae073bc8c83007cd9750c23abdf428a014e926cbf92fc3152c5093634a353b6c7327ca6540cede5f32e0b029e14d67a24300d9e5816bd3d898563a94da2c4332bc13103a9f7e19e3fe425b085ae4ff35fa6f7db4d8fcbf5a0fe8f2686a0fe664084cb2a29284cd3348e1d1183562df56c41a7221bc34dc1195940c6a6d14ed601804a3c476132a3cc56c07db9ab2b0194d5081fe5f79c258678bfcf89fc5623df654ac32ad37b066ca7ec8715722337b8541585dac54357849c014d384b6c339c1764753af3df05aba169404f34a13949a4a4f6a6cc47ce2343cb5341c953515e79ee1bde3ef6e8cf22e2bb57032771946d01f8596a97109656113c72860027cee7b4d41d4f5832c9f35d07b8f0a8e30a42d907508657be148a1f0f0ab43e5809973f368ddf7acb276d28df043420cbe9ce3b524465eb0843b9ba1c793112cdf47d67d22cebd146e3ee9e6eb309049e62903a20a967ad239778f4a6cb48e8650cd2b414f2d0fd483799684ab5d1a36fbc43c8c0e7345dfaf57ab6812d41364388c2e06216fb3d301cdd4f55e4b3e3c93b4b7c848324f273cb115d37045907b8a248df1060ba4559d6fad12e1404605fe4843389ac8a77c7b2537ae4e4eccd645d465bab2001dee1486804db80771a626093e4e629b8d6db48ab3cafd265cca702ca9edc811ef868bd5149bce9b839d8dc832bd2be123540527808731c68343731dee22f0338c3a64e9922958f78f7e75d6ab59c678aca7168cf761010fd9ac8cd66f01eaae814d4bb0fc264bfeae11776ff1086c81450ae5763381cfd15a266ee365ebcfc60b07f9ab65d1b8c8c6e3dbd0970237fccba20653da1176e5a9c2f1d2c43d1526bb484561951f394d2e18b63c37fd74a42625305aaf44b71bd827c90fbec069eda9be0cf0261119b7b49917d750b947aa5fef475d90a99abb2cd4e50e54a7b1ab8f722832c2e46eb87a35a9691f2701befda17527a0509ae01994b5aa1d43ed5c0bb763bc64601e505e74347480a07ffa5d2b5e5d99ef1a2120769ceae0560c2cd550cf91d55fbd928c0b1dd19feff41f9d6fda941f8ff3e4c154c7299660d23c1bdbc34946318b977aa2a18a5cd1b42a76a63a64f14d76158c88586391e515d340634e15dd8efc550a9085664c740ab1378b7fcd4bfb99fe2d9ddf2f72dc52710d502c203a3dd93706883ed0dea9efcd8433d5d0c229e4b2ad62c01905c04757347f51b4b1e51a75e57531bd6e96a2fba2dec833eebe2f0ff3b9ffab7c88efebfbd69dc06755a0e88009fe7521e7b7afb34c193016c70b2a25e98b1c9de3a3b5ba579ca379c258ab1ae7f17b16070cb63cdc1b0d759a166d313662ee7099863e66593ddba465d3bc2735072b959e53cf5b4117bac0f2864ae2e1f52647f70e260909c42bfb8f4668c5c55aea742a05c12de4174907413ef8b61395ebc87e9f50b90e2d89e8989bfbeea8fef95d7f6f580de50073d226923d1cffe361aac6e5f262a08767eef5254eddea42d11e1b777676dfb25f7df5139ce864f5fb30c4f7dbec6590d7f38b904431bea583385a5dd89c69922bde8dcdb741fd5153ff0920f75ee6bc56741e5b1f1fc8bfcae2a00cad0f1f212f0d715f96e71e089b96bfa8edd455796ca8ffdd3808787cf632320070146dd3a3551b2b83522a3023e50b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+	
+	</div>
+  <a type="button" href="/2021/12/01/12月/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/11/29/网协复习-第二章/" >网协复习-第二章</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-11-29  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<p>一章节的内容。。。</p>
 <p>简直坐牢。。。</p>
-</div><p class="readmore"><a href="/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">最大子序和-Leetcode</a></h1><div class="post-meta">2021-11-04</div><div class="post-content"><p><strong>题目</strong>：给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
-<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111042119.png" alt="image-20211104231028856"></p></div><p class="readmore"><a href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">Java Set.add()方法</a></h1><div class="post-meta">2021-11-04</div><div class="post-content"><ul>
+
+	
+
+	</div>
+  <a type="button" href="/2021/11/29/网协复习-第二章/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<p>一章节的内容。。。</p>
+<p>简直坐牢。。。</p>
+
+	
+	</div>
+  <a type="button" href="/2021/11/29/网协复习-第二章/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/11/04/最大子序和-Leetcode/" >最大子序和-Leetcode</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-11-04  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<p><strong>题目</strong>：给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111042119.png" alt="image-20211104231028856"></p>
+<p><strong>分析</strong></p>
+<p><strong>方法一：贪心算法</strong></p>
+<pre><code class="python">class Solution:
+    def maxSubArray(self, nums: List[int]) -&gt; int:
+        # 贪心
+        # 如果当前指针所指元素之前的和小于0，则丢弃当前元素之前的数列
+        # 复杂度：空间复杂度O(1),时间复杂度O(n)
+        cur_sum = max_sum = nums[0]
+        for i in range(1, len(nums)):
+            cur_sum = max(nums[i],cur_sum+nums[i])
+            max_sum = max(cur_sum,max_sum)
+        return max_sum
+</code></pre>
+<p><strong>方法二：动态规划</strong></p>
+<pre><code class="python">class Solution:
+    def maxSubArray(self, nums: List[int]) -&gt; int:
+        # 动态规划
+        # 若前一个元素大于0，则将其加到当前元素上
+        # 复杂度：空间复杂度O(1),时间复杂度O(n)
+        n = len(nums)
+        for i in range(1,n):
+            if nums[i-1] &gt; 0:
+                nums[i] += nums[i-1]
+        return max(nums)
+</code></pre>
+
+	
+
+	</div>
+  <a type="button" href="/2021/11/04/最大子序和-Leetcode/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<p><strong>题目</strong>：给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111042119.png" alt="image-20211104231028856"></p>
+<p><strong>分析</strong></p>
+<p><strong>方法一：贪心算法</strong></p>
+<pre><code class="python">class Solution:
+    def maxSubArray(self, nums: List[int]) -&gt; int:
+        # 贪心
+        # 如果当前指针所指元素之前的和小于0，则丢弃当前元素之前的数列
+        # 复杂度：空间复杂度O(1),时间复杂度O(n)
+        cur_sum = max_sum = nums[0]
+        for i in range(1, len(nums)):
+            cur_sum = max(nums[i],cur_sum+nums[i])
+            max_sum = max(cur_sum,max_sum)
+        return max_sum
+</code></pre>
+<p><strong>方法二：动态规划</strong></p>
+<pre><code class="python">class Solution:
+    def maxSubArray(self, nums: List[int]) -&gt; int:
+        # 动态规划
+        # 若前一个元素大于0，则将其加到当前元素上
+        # 复杂度：空间复杂度O(1),时间复杂度O(n)
+        n = len(nums)
+        for i in range(1,n):
+            if nums[i-1] &gt; 0:
+                nums[i] += nums[i-1]
+        return max(nums)
+</code></pre>
+
+	
+	</div>
+  <a type="button" href="/2021/11/04/最大子序和-Leetcode/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/11/04/java知识/" >Java Set.add()方法</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-11-04  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<ul>
 <li>Java 集合类中的 Set.add() 方法用来向 Set 集合添加对象。</li>
 <li>如果 Set 集合中已经包含相同的对象，则不改变 Set 集合。</li>
-<li>该方法返回值为 boolean 对象，如果 Set 集合中不包含要添加的对象，则添加对象并返回   true，否则返回 false。</li></div><p class="readmore"><a href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/">Numpy简易入门</a></h1><div class="post-meta">2021-10-21</div><div class="post-content"><h4 id=""><a href="#" class="headerlink" title=""></a></h4></div><p class="readmore"><a href="/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/">第2章 感知机</a></h1><div class="post-meta">2021-10-17</div><div class="post-content"><h4 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h4><p>​        感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出将训练数据进行线性划分的分离超平面，为此，导入基于误分类的损失函数，利用梯度下降法对损失函数进行极小化，求得感知机模型。它是神经网络与支持向量机的基础。</p></div><p class="readmore"><a href="/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/">阅读全文</a></p></div><nav class="page-navigator"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a></nav><script type="text/x-mathjax-config">MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://murentutu.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">AI数学基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/">《统计学习方法》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px;">测试</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">笔记</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%88%86%E6%9E%90/" style="font-size: 15px;">网络协议分析</a> <a href="/tags/little-talk/" style="font-size: 15px;">little talk</a> <a href="/tags/Docker/" style="font-size: 15px;">Docker</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">Docker+Calibre-web搭建个人图书馆</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">python爬虫02</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">python爬虫01</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/01/12%E6%9C%88/">12月</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">网协复习-第二章</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">最大子序和-Leetcode</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">Java Set.add()方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/">Numpy简易入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/">第2章 感知机</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.cnblogs.com/murentutu/" title="murentutu" target="_blank">murentutu</a><ul></ul><a href="http://duitutu.cn/" title="Du1L0v3" target="_blank">Du1L0v3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">murentutu.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+<li>该方法返回值为 boolean 对象，如果 Set 集合中不包含要添加的对象，则添加对象并返回   true，否则返回 false。</li>
+</ul>
+<p><strong>用法:向Set集合添加对象（可用作哈希表查找，如果哈希表中已经有该对象，则不再添加）</strong></p>
+<pre><code class="java">public static void main(String[] args)&#123;
+    Set set = new HashSet();  //定义Set集合对象
+    set.add(new Date());  //向集合中添加日期对象
+    set.add(&quot;apple&quot;);  //向集合中添加对象
+    set.add(&quot;book&quot;);
+    set.add(&quot;apple&quot;);
+    set.add(new Integer(3));
+    int size = set.size();  //获取集合的大小
+    System.out.println(&quot;Set集合的大小为:&quot;+size);  //将集合大小输出
+&#125;
+</code></pre>
+<p><strong>Leetcode217：Contains Duplicate</strong></p>
+<p>Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.</p>
+<p>给定一个整数数组，判断是否存在重复元素。</p>
+<p>如果存在一值在数组中出现至少两次，函数返回 true 。如果数组中每个元素都不相同，则返回 false 。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037929.png" alt="image-20211104221544235"></p>
+<p><strong>代码解答</strong></p>
+<pre><code class="java">class Solution &#123;
+    public boolean containsDuplicate(int[] nums) &#123;
+        Set&lt;Integer&gt; set = new HashSet&lt;Integer&gt;();
+        for(int x : nums)&#123;
+            if(!set.add(x))&#123;
+                return true;
+            &#125;
+        &#125;
+        return false;
+    &#125;
+&#125;
+</code></pre>
+	
+
+	</div>
+  <a type="button" href="/2021/11/04/java知识/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<ul>
+<li>Java 集合类中的 Set.add() 方法用来向 Set 集合添加对象。</li>
+<li>如果 Set 集合中已经包含相同的对象，则不改变 Set 集合。</li>
+<li>该方法返回值为 boolean 对象，如果 Set 集合中不包含要添加的对象，则添加对象并返回   true，否则返回 false。</li>
+</ul>
+<p><strong>用法:向Set集合添加对象（可用作哈希表查找，如果哈希表中已经有该对象，则不再添加）</strong></p>
+<pre><code class="java">public static void main(String[] args)&#123;
+    Set set = new HashSet();  //定义Set集合对象
+    set.add(new Date());  //向集合中添加日期对象
+    set.add(&quot;apple&quot;);  //向集合中添加对象
+    set.add(&quot;book&quot;);
+    set.add(&quot;apple&quot;);
+    set.add(new Integer(3));
+    int size = set.size();  //获取集合的大小
+    System.out.println(&quot;Set集合的大小为:&quot;+size);  //将集合大小输出
+&#125;
+</code></pre>
+<p><strong>Leetcode217：Contains Duplicate</strong></p>
+<p>Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.</p>
+<p>给定一个整数数组，判断是否存在重复元素。</p>
+<p>如果存在一值在数组中出现至少两次，函数返回 true 。如果数组中每个元素都不相同，则返回 false 。</p>
+<p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111037929.png" alt="image-20211104221544235"></p>
+<p><strong>代码解答</strong></p>
+<pre><code class="java">class Solution &#123;
+    public boolean containsDuplicate(int[] nums) &#123;
+        Set&lt;Integer&gt; set = new HashSet&lt;Integer&gt;();
+        for(int x : nums)&#123;
+            if(!set.add(x))&#123;
+                return true;
+            &#125;
+        &#125;
+        return false;
+    &#125;
+&#125;
+</code></pre>
+	
+	</div>
+  <a type="button" href="/2021/11/04/java知识/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/10/21/Numpy简易入门/" >Numpy简易入门</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-10-21  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<h4 id><a href="#" class="headerlink" title></a></h4>
+	
+
+	</div>
+  <a type="button" href="/2021/10/21/Numpy简易入门/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<h4 id><a href="#" class="headerlink" title></a></h4>
+	
+	</div>
+  <a type="button" href="/2021/10/21/Numpy简易入门/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2021/10/17/感知机/" >第2章 感知机</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-10-17  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<h4 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h4><p>​        感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出将训练数据进行线性划分的分离超平面，为此，导入基于误分类的损失函数，利用梯度下降法对损失函数进行极小化，求得感知机模型。它是神经网络与支持向量机的基础。</p>
+<blockquote>
+<p>什么是超平面？</p>
+<pre><code> 可以理解为对于一个n维空间，超平面就是一个n-1维的子空间，可以用来分割n维空间。
+</code></pre>
+</blockquote>
+<h4 id="2-感知机模型"><a href="#2-感知机模型" class="headerlink" title="2. 感知机模型"></a>2. 感知机模型</h4><p>由输入空间到输出空间的如下函数：<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111039551.png" alt="image-20211018201948328" style="zoom:80%;">称为感知机。</p>
+<p>其中 w和 b 属于感知机模型参数，w∈Rn 叫作权值或权值向量（weight vector)， b∈R叫作偏置 (bias)。w⋅x为w和x的内积。 sign是符号函数，即：</p>
+<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111039388.png" alt="image-20211018202400869" style="zoom: 80%;">
+
+<p>感知机模型的假设空间定义在特征空间中的所有线性分类模型或线性分类器（linear classifier ) , 即函数集合<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111039052.png" alt="image-20211018202613465" style="zoom:80%;">。</p>
+<p>训练感知机模型就是通过训练集数据学习参数 w 和 b ，然后训练好的感知机模型就能对新的输入实例进行类别的预测。</p>
+<h4 id="3-感知机学习策略"><a href="#3-感知机学习策略" class="headerlink" title="3. 感知机学习策略"></a>3. 感知机学习策略</h4>
+	
+
+	</div>
+  <a type="button" href="/2021/10/17/感知机/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<h4 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h4><p>​        感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机学习旨在求出将训练数据进行线性划分的分离超平面，为此，导入基于误分类的损失函数，利用梯度下降法对损失函数进行极小化，求得感知机模型。它是神经网络与支持向量机的基础。</p>
+<blockquote>
+<p>什么是超平面？</p>
+<pre><code> 可以理解为对于一个n维空间，超平面就是一个n-1维的子空间，可以用来分割n维空间。
+</code></pre>
+</blockquote>
+<h4 id="2-感知机模型"><a href="#2-感知机模型" class="headerlink" title="2. 感知机模型"></a>2. 感知机模型</h4><p>由输入空间到输出空间的如下函数：<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111039551.png" alt="image-20211018201948328" style="zoom:80%;">称为感知机。</p>
+<p>其中 w和 b 属于感知机模型参数，w∈Rn 叫作权值或权值向量（weight vector)， b∈R叫作偏置 (bias)。w⋅x为w和x的内积。 sign是符号函数，即：</p>
+<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111039388.png" alt="image-20211018202400869" style="zoom: 80%;">
+
+<p>感知机模型的假设空间定义在特征空间中的所有线性分类模型或线性分类器（linear classifier ) , 即函数集合<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111039052.png" alt="image-20211018202613465" style="zoom:80%;">。</p>
+<p>训练感知机模型就是通过训练集数据学习参数 w 和 b ，然后训练好的感知机模型就能对新的输入实例进行类别的预测。</p>
+<h4 id="3-感知机学习策略"><a href="#3-感知机学习策略" class="headerlink" title="3. 感知机学习策略"></a>3. 感知机学习策略</h4>
+	
+	</div>
+  <a type="button" href="/2021/10/17/感知机/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+
+		</div>
+
+		<!-- pagination -->
+		<div>
+  		<center>
+		<div class="pagination">
+
+   
+    
+           <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>上一页</a>
+        
+
+        <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+ 
+       <a href="/page/2/" type="button" class="btn btn-default ">下一页<i class="fa fa-arrow-circle-o-right"></i></a>     
+        
+
+  
+</div>
+
+  		</center>
+		</div>
+
+		
+		
+	</div> <!-- col-md-9 -->
+
+	
+		<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+  <div id="site_search">
+   <div class="form-group">
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
+   </div>  
+  <div id="local-search-result"></div>
+  </div>
+
+
+		
+			
+	<div class="widget">
+		<h4>分类</h4>
+		<ul class="tag_box inline list-unstyled">
+		
+			<li><a href="/categories/AI数学基础/">AI数学基础<span>1</span></a></li>
+		
+			<li><a href="/categories/《统计学习方法》/">《统计学习方法》<span>1</span></a></li>
+		
+		</ul>
+	</div>
+
+		
+			
+	<div class="widget">
+		<h4>标签云</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/tags/网络协议分析/">网络协议分析<span>1</span></a></li>
+		
+			<li><a href="/tags/测试/">测试<span>1</span></a></li>
+		
+			<li><a href="/tags/Leetcode/">Leetcode<span>2</span></a></li>
+		
+			<li><a href="/tags/Java/">Java<span>1</span></a></li>
+		
+			<li><a href="/tags/笔记/">笔记<span>6</span></a></li>
+		
+			<li><a href="/tags/Docker/">Docker<span>1</span></a></li>
+		
+			<li><a href="/tags/little-talk/">little talk<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
+
+		
+			
+<div class="widget">
+  <h4>最新文章</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2022/05/11/Docker-Calibre-web搭建个人图书馆/" ><i class="fa fa-file-o"></i>Docker+Calibre-web搭建个人图书馆</a>
+      </li>
+    
+      <li>
+        <a href="/2021/12/25/python爬虫03/" ><i class="fa fa-file-o"></i>python爬虫03</a>
+      </li>
+    
+      <li>
+        <a href="/2021/12/22/python爬虫02/" ><i class="fa fa-file-o"></i>python爬虫02</a>
+      </li>
+    
+      <li>
+        <a href="/2021/12/21/python爬虫01/" ><i class="fa fa-file-o"></i>python爬虫01</a>
+      </li>
+    
+      <li>
+        <a href="/2021/12/01/12月/" ><i class="fa fa-file-o"></i>12月</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			
+<div class="widget">
+	<h4>链接</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="false"></i><a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" title="" target="_blank"]);">hexo-theme-bithack</a></li>
+	
+	</ul>
+</div>
+
+
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+	
+	
+</div> <!-- row-fluid -->
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2022 murentutu's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

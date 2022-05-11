@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://murentutu.github.io/categories/index-1.html</loc>
+    
+    <lastmod>2022-05-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://murentutu.github.io/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/</loc>
     
     <lastmod>2022-05-11</lastmod>
@@ -123,7 +130,14 @@
 
   
   <url>
-    <loc>https://murentutu.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://murentutu.github.io/tags/little-talk/</loc>
+    <lastmod>2022-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/tags/Docker/</loc>
     <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -131,6 +145,13 @@
   
   <url>
     <loc>https://murentutu.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://murentutu.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -152,20 +173,6 @@
   
   <url>
     <loc>https://murentutu.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2022-05-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://murentutu.github.io/tags/little-talk/</loc>
-    <lastmod>2022-05-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://murentutu.github.io/tags/Docker/</loc>
     <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

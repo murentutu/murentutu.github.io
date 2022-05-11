@@ -1,4 +1,135 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="You should strive for self-improvement."><title>python爬虫02 | murentutu</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">python爬虫02</h1><a id="logo" href="/.">murentutu</a><p class="description">You should strive for self-improvement.</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">python爬虫02</h1><div class="post-meta">2021-12-22<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><blockquote>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>python爬虫02 | murentutu</title>
+  <meta name="author" content="murentutu">
+  
+  <meta name="description" content="You should strive for self-improvement.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="python爬虫02"/>
+  <meta property="og:site_name" content="murentutu"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="murentutu" type="application/atom+xml">
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">murentutu</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> python爬虫02</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <blockquote>
 <p>记录一下这两天的成果。书接上回~</p>
 </blockquote>
 <p>上次我成功地爬取到了咱湖工大的新闻网站，将每一个新闻的url链接、新闻标题、以及新闻发布的日期存取到了一个NewsTitle.txt中。</p>
@@ -11,29 +142,137 @@
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036444.png" alt="image-20211223210254962"></p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036668.png" alt="image-20211223210318060"></p>
 <p>可以看到，不同的页面就是网址后面带的数字不同。所以呢，我就利用了这么个循环，炒鸡简单的。把源代码上一下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> http.client</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    爬取多页数据（找到规律然后使用循环）</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">conn = http.client.HTTPConnection(<span class="string">&#x27;news.hut.edu.cn&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(conn)</span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">101</span>):</span><br><span class="line">    page_url = <span class="string">f&#x27;/rdyw/<span class="subst">&#123;<span class="number">101</span>-index&#125;</span>&#x27;</span></span><br><span class="line">    conn.request(<span class="string">&#x27;GET&#x27;</span>,<span class="string">f&quot;<span class="subst">&#123;page_url&#125;</span>.htm&quot;</span>)</span><br><span class="line">    resp = conn.getresponse()</span><br><span class="line">    datas = resp.read()</span><br><span class="line">    datas = datas.decode(<span class="string">&quot;utf-8&quot;</span>)       <span class="comment"># 根据网页编码方式对应解码</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;news.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> file:   <span class="comment"># 参数用 a 避免覆盖写入</span></span><br><span class="line">        file.write(datas)</span><br><span class="line">    res = re.findall(<span class="string">&quot;&lt;a href=\&quot;(.+?)\&quot;&gt;[\s]*(.*)[\s]*&lt;/a&gt;[\s]*?&lt;em&gt;([\s\S]*?)&lt;/em&gt;&quot;</span>,datas,re.M)</span><br><span class="line">    wr_content = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> res:</span><br><span class="line">        wr_content = <span class="string">f&#x27;<span class="subst">&#123;wr_content&#125;</span><span class="subst">&#123;i[<span class="number">1</span>]&#125;</span>\n<span class="subst">&#123;i[<span class="number">0</span>]&#125;</span>\n<span class="subst">&#123;i[<span class="number">2</span>]&#125;</span>\n\n&#x27;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;NewsTitle.txt&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        file.write(wr_content)</span><br><span class="line">    <span class="keyword">if</span> resp.status!= <span class="number">200</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">import http.client
+import re
+&#39;&#39;&#39;
+    爬取多页数据（找到规律然后使用循环）
+&#39;&#39;&#39;
+conn = http.client.HTTPConnection(&#39;news.hut.edu.cn&#39;)
+print(conn)
+for index in range(1,101):
+    page_url = f&#39;/rdyw/&#123;101-index&#125;&#39;
+    conn.request(&#39;GET&#39;,f&quot;&#123;page_url&#125;.htm&quot;)
+    resp = conn.getresponse()
+    datas = resp.read()
+    datas = datas.decode(&quot;utf-8&quot;)       # 根据网页编码方式对应解码
+    with open(&#39;news.txt&#39;,&#39;a&#39;,encoding=&quot;utf-8&quot;) as file:   # 参数用 a 避免覆盖写入
+        file.write(datas)
+    res = re.findall(&quot;&lt;a href=\&quot;(.+?)\&quot;&gt;[\s]*(.*)[\s]*&lt;/a&gt;[\s]*?&lt;em&gt;([\s\S]*?)&lt;/em&gt;&quot;,datas,re.M)
+    wr_content = &#39;&#39;
+    for i in res:
+        wr_content = f&#39;&#123;wr_content&#125;&#123;i[1]&#125;\n&#123;i[0]&#125;\n&#123;i[2]&#125;\n\n&#39;
+    with open(&#39;NewsTitle.txt&#39;,&#39;a&#39;,encoding=&quot;utf-8&quot;) as file:
+        file.write(wr_content)
+    if resp.status!= 200:
+        break
+conn.close()
+</code></pre>
 <h4 id="问题02-如何将数据存储到数据库"><a href="#问题02-如何将数据存储到数据库" class="headerlink" title="问题02 如何将数据存储到数据库"></a>问题02 如何将数据存储到数据库</h4><p>前面已经练习过在python中如何操纵数据库。首先，MySQL官方提供了一个mysql-connector-python的驱动。其次，这几天搜罗东西的时候好像还看到其他的，例如pymysql等等。</p>
 <p>这里，我还是用的官方的这个。和之前操作数据库不同主要是，这里我们需要将多组数据存储到数据库里面，同样使用的循环（其实也不是很复杂的说，咋就没有脑子呢）。</p>
 <p>关键代码如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> res:</span><br><span class="line">       query = (<span class="string">&quot;INSERT INTO news (title, url, date) values (%s, %s, %s)&quot;</span>)</span><br><span class="line">       data = [i[<span class="number">1</span>], i[<span class="number">0</span>], i[<span class="number">2</span>]]</span><br><span class="line">       cursor.execute(query,data)</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python"> for i in res:
+        query = (&quot;INSERT INTO news (title, url, date) values (%s, %s, %s)&quot;)
+        data = [i[1], i[0], i[2]]
+        cursor.execute(query,data)
+</code></pre>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036966.png" alt="image-20211223212357233"></p>
 <p>查看数据库，发现也成功插入了每一条数据。完整代码如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> http.client</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> mysql.connector</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将获取到的数据插入到数据库</span></span><br><span class="line"><span class="string">    遗留问题：发现数据库中，出现多条数据的重复，怎么解决？</span></span><br><span class="line"><span class="string">    貌似可以采用python.pandas</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">conn = http.client.HTTPConnection(<span class="string">&#x27;news.hut.edu.cn&#x27;</span>)</span><br><span class="line">cnx = mysql.connector.connect(user=<span class="string">&#x27;root&#x27;</span>, password=<span class="string">&#x27;123456&#x27;</span>,</span><br><span class="line">                              host=<span class="string">&#x27;127.0.0.1&#x27;</span>,</span><br><span class="line">                              database=<span class="string">&#x27;sqltest&#x27;</span>)</span><br><span class="line">cursor = cnx.cursor()</span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">102</span>):</span><br><span class="line">    page_url = <span class="string">f&#x27;/rdyw/<span class="subst">&#123;<span class="number">102</span> - index&#125;</span>&#x27;</span></span><br><span class="line">    conn.request(<span class="string">&#x27;GET&#x27;</span>, <span class="string">f&quot;<span class="subst">&#123;page_url&#125;</span>.htm&quot;</span>)</span><br><span class="line">    resp = conn.getresponse()</span><br><span class="line">    datas = resp.read()</span><br><span class="line">    datas = datas.decode(<span class="string">&quot;utf-8&quot;</span>)  <span class="comment"># 根据网页编码方式对应解码</span></span><br><span class="line">    res = re.findall(<span class="string">&quot;&lt;a href=\&quot;(.+?)\&quot;&gt;[\s]*(.*)[\s]*&lt;/a&gt;[\s]*?&lt;em&gt; \[([\s\S]*?)\]&lt;/em&gt;&quot;</span>, datas, re.M)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> res:</span><br><span class="line">        query = (<span class="string">&quot;INSERT INTO news (title, url, date) values (%s, %s, %s)&quot;</span>)</span><br><span class="line">        data = [i[<span class="number">1</span>], i[<span class="number">0</span>], i[<span class="number">2</span>]]</span><br><span class="line">        cursor.execute(query,data)</span><br><span class="line">    <span class="keyword">if</span> resp.status != <span class="number">200</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">cnx.commit()</span><br><span class="line">cursor.close()</span><br><span class="line">cnx.close()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
-
+<pre><code class="python">import http.client
+import re
+import mysql.connector
+&#39;&#39;&#39;
+    将获取到的数据插入到数据库
+    遗留问题：发现数据库中，出现多条数据的重复，怎么解决？
+    貌似可以采用python.pandas
+&#39;&#39;&#39;
+conn = http.client.HTTPConnection(&#39;news.hut.edu.cn&#39;)
+cnx = mysql.connector.connect(user=&#39;root&#39;, password=&#39;123456&#39;,
+                              host=&#39;127.0.0.1&#39;,
+                              database=&#39;sqltest&#39;)
+cursor = cnx.cursor()
+for index in range(1, 102):
+    page_url = f&#39;/rdyw/&#123;102 - index&#125;&#39;
+    conn.request(&#39;GET&#39;, f&quot;&#123;page_url&#125;.htm&quot;)
+    resp = conn.getresponse()
+    datas = resp.read()
+    datas = datas.decode(&quot;utf-8&quot;)  # 根据网页编码方式对应解码
+    res = re.findall(&quot;&lt;a href=\&quot;(.+?)\&quot;&gt;[\s]*(.*)[\s]*&lt;/a&gt;[\s]*?&lt;em&gt; \[([\s\S]*?)\]&lt;/em&gt;&quot;, datas, re.M)
+    for i in res:
+        query = (&quot;INSERT INTO news (title, url, date) values (%s, %s, %s)&quot;)
+        data = [i[1], i[0], i[2]]
+        cursor.execute(query,data)
+    if resp.status != 200:
+        break
+cnx.commit()
+cursor.close()
+cnx.close()
+conn.close()
+</code></pre>
 <h4 id="问题03-如何进行数据去重"><a href="#问题03-如何进行数据去重" class="headerlink" title="问题03 如何进行数据去重"></a>问题03 如何进行数据去重</h4><p>将数据插入到数据库以后呢，就发现居然有很多重复的！！那么，如何将数据去重呢？</p>
 <p>接下来，我进行了一系列的迷幻操作才将数据去重。</p>
 <p>首先，我更换了一种数据暂存方式，我将爬取到的数据以csv文件格式存储。CSV是一种通用的、相对简单的文件格式，被用户、商业和科学广泛应用。emm说白了就是在每一行数据中以“，”进行存储。</p>
 <p>然后，使用pandas中的去重函数drop_duplicates()。</p>
 <p>最后，将csv中的数据存储到数据库中。</p>
 <p>这些就不一一赘述了，直接上代码吧。</p>
-<h5 id="以csv文件存储"><a href="#以csv文件存储" class="headerlink" title="以csv文件存储"></a>以csv文件存储</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> http.client</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    尝试另一个存储方式，存储到csv中</span></span><br><span class="line"><span class="string">    CSV是一种通用的、相对简单的文件格式，被用户、商业和科学广泛应用。</span></span><br><span class="line"><span class="string">    最广泛的应用是在程序之间转移表格数据，而这些程序本身是在不兼容的格式上进行操作的（往往是私有的和/或无规范的格式）。</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">conn = http.client.HTTPConnection(<span class="string">&#x27;news.hut.edu.cn&#x27;</span>)</span><br><span class="line">news_message = []</span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">102</span>):</span><br><span class="line">    page_url = <span class="string">f&#x27;/rdyw/<span class="subst">&#123;<span class="number">102</span> - index&#125;</span>&#x27;</span></span><br><span class="line">    conn.request(<span class="string">&#x27;GET&#x27;</span>, <span class="string">f&quot;<span class="subst">&#123;page_url&#125;</span>.htm&quot;</span>)</span><br><span class="line">    resp = conn.getresponse()</span><br><span class="line">    datas = resp.read()</span><br><span class="line">    datas = datas.decode(<span class="string">&quot;utf-8&quot;</span>)  <span class="comment"># 根据网页编码方式对应解码</span></span><br><span class="line">    res = re.findall(<span class="string">&quot;&lt;a href=\&quot;(.+?)\&quot;&gt;[\s]*(.*)[\s]*&lt;/a&gt;[\s]*?&lt;em&gt; \[([\s\S]*?)\]&lt;/em&gt;&quot;</span>, datas, re.M)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> res:</span><br><span class="line">        news_message.append(i)</span><br><span class="line">    <span class="keyword">if</span> resp.status != <span class="number">200</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="built_in">print</span>(news_message)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;NewsMessage.csv&quot;</span>, <span class="string">&quot;w&quot;</span>, newline=<span class="string">&quot;&quot;</span>, encoding=<span class="string">&quot;utf_8_sig&quot;</span>) <span class="keyword">as</span> csvfile:</span><br><span class="line">    write = csv.writer(csvfile)</span><br><span class="line">    write.writerow([<span class="string">&quot;url&quot;</span>, <span class="string">&quot;title&quot;</span>, <span class="string">&quot;date&quot;</span>])</span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> news_message:</span><br><span class="line">        write.writerow(index)</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
+<h5 id="以csv文件存储"><a href="#以csv文件存储" class="headerlink" title="以csv文件存储"></a>以csv文件存储</h5><pre><code class="python">import http.client
+import re
+import csv
+&#39;&#39;&#39;
+    尝试另一个存储方式，存储到csv中
+    CSV是一种通用的、相对简单的文件格式，被用户、商业和科学广泛应用。
+    最广泛的应用是在程序之间转移表格数据，而这些程序本身是在不兼容的格式上进行操作的（往往是私有的和/或无规范的格式）。
+&#39;&#39;&#39;
+conn = http.client.HTTPConnection(&#39;news.hut.edu.cn&#39;)
+news_message = []
+for index in range(1, 102):
+    page_url = f&#39;/rdyw/&#123;102 - index&#125;&#39;
+    conn.request(&#39;GET&#39;, f&quot;&#123;page_url&#125;.htm&quot;)
+    resp = conn.getresponse()
+    datas = resp.read()
+    datas = datas.decode(&quot;utf-8&quot;)  # 根据网页编码方式对应解码
+    res = re.findall(&quot;&lt;a href=\&quot;(.+?)\&quot;&gt;[\s]*(.*)[\s]*&lt;/a&gt;[\s]*?&lt;em&gt; \[([\s\S]*?)\]&lt;/em&gt;&quot;, datas, re.M)
+    for i in res:
+        news_message.append(i)
+    if resp.status != 200:
+        break
+print(news_message)
+with open(&quot;NewsMessage.csv&quot;, &quot;w&quot;, newline=&quot;&quot;, encoding=&quot;utf_8_sig&quot;) as csvfile:
+    write = csv.writer(csvfile)
+    write.writerow([&quot;url&quot;, &quot;title&quot;, &quot;date&quot;])
+    for index in news_message:
+        write.writerow(index)
+conn.close()
+</code></pre>
+<h5 id="使用pandas去重函数"><a href="#使用pandas去重函数" class="headerlink" title="使用pandas去重函数"></a>使用pandas去重函数</h5><pre><code class="python">import pandas as pd
+&#39;&#39;&#39;
+    数据去重
+&#39;&#39;&#39;
+csv = pd.read_csv(&quot;NewsMessage.csv&quot;,low_memory=False,error_bad_lines=False)
+df = pd.DataFrame(csv)
+print(df.shape)
+f = df.drop_duplicates(keep=False)  # 去重
+print(f.shape)
+f.to_csv(&#39;the_new.csv&#39;,index = None,encoding=&quot;utf_8_sig&quot;)
+</code></pre>
+<h5 id="把csv中的数据存储到数据库"><a href="#把csv中的数据存储到数据库" class="headerlink" title="把csv中的数据存储到数据库"></a>把csv中的数据存储到数据库</h5><pre><code class="python">import csv
+import pymysql
+import mysql.connector
 
-<h5 id="使用pandas去重函数"><a href="#使用pandas去重函数" class="headerlink" title="使用pandas去重函数"></a>使用pandas去重函数</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    数据去重</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">csv = pd.read_csv(<span class="string">&quot;NewsMessage.csv&quot;</span>,low_memory=<span class="literal">False</span>,error_bad_lines=<span class="literal">False</span>)</span><br><span class="line">df = pd.DataFrame(csv)</span><br><span class="line"><span class="built_in">print</span>(df.shape)</span><br><span class="line">f = df.drop_duplicates(keep=<span class="literal">False</span>)  <span class="comment"># 去重</span></span><br><span class="line"><span class="built_in">print</span>(f.shape)</span><br><span class="line">f.to_csv(<span class="string">&#x27;the_new.csv&#x27;</span>,index = <span class="literal">None</span>,encoding=<span class="string">&quot;utf_8_sig&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h5 id="把csv中的数据存储到数据库"><a href="#把csv中的数据存储到数据库" class="headerlink" title="把csv中的数据存储到数据库"></a>把csv中的数据存储到数据库</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="keyword">import</span> mysql.connector</span><br><span class="line"></span><br><span class="line">cnx = mysql.connector.connect(user=<span class="string">&#x27;root&#x27;</span>, password=<span class="string">&#x27;123456&#x27;</span>,</span><br><span class="line">                              host=<span class="string">&#x27;127.0.0.1&#x27;</span>,</span><br><span class="line">                              database=<span class="string">&#x27;sqltest&#x27;</span>,</span><br><span class="line">                              )</span><br><span class="line">cursor = cnx.cursor()</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;the_new.csv&#x27;</span>,<span class="string">&#x27;r&#x27;</span>,encoding=<span class="string">&quot;utf_8_sig&quot;</span>) <span class="keyword">as</span> csvfile:</span><br><span class="line">    read = csv.reader(csvfile)</span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> <span class="built_in">list</span>(read)[<span class="number">1</span>:]:</span><br><span class="line">        i = <span class="built_in">tuple</span>(index)</span><br><span class="line">        sql = <span class="string">&quot;INSERT INTO news VALUES &quot;</span>+<span class="built_in">str</span>(<span class="built_in">tuple</span>(index))</span><br><span class="line">        cursor.execute(sql)</span><br><span class="line">    cnx.commit()</span><br><span class="line">    cursor.close()</span><br><span class="line">    cnx.close()</span><br></pre></td></tr></table></figure>
-
+cnx = mysql.connector.connect(user=&#39;root&#39;, password=&#39;123456&#39;,
+                              host=&#39;127.0.0.1&#39;,
+                              database=&#39;sqltest&#39;,
+                              )
+cursor = cnx.cursor()
+with open(&#39;the_new.csv&#39;,&#39;r&#39;,encoding=&quot;utf_8_sig&quot;) as csvfile:
+    read = csv.reader(csvfile)
+    for index in list(read)[1:]:
+        i = tuple(index)
+        sql = &quot;INSERT INTO news VALUES &quot;+str(tuple(index))
+        cursor.execute(sql)
+    cnx.commit()
+    cursor.close()
+    cnx.close()
+</code></pre>
 <p>这里最好是重新再建一个表插入数据。</p>
 <p>最后查看数据库，没有重复的数据啦！</p>
 <p><img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202205111036696.png" alt="image-20211223215423852"></p>
@@ -41,14 +280,148 @@
 <p>然而事情并没有结束，要建一个搜索引擎，还需要前后端的应用。</p>
 <p>这个又要怎么实现呢？校外的老师教我们使用了Django，一个python的web应用开发框架。除了Django以外，还可以使用Flask（网上看到有人使用了这个做的搜索引擎，所以先学了一点点Flask）。下次再讲罢！</p>
 </blockquote>
-</div><div class="tags"><a href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fa fa-tag"></i>笔记</a></div><div class="post-nav"><a class="pre" href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a><a class="next" href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">python爬虫01</a></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=1.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=1.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=1.0.0"></script><script>var gitalk = new Gitalk({
-  clientID: 'd993f69739800ba22272',
-  clientSecret: '96ffea01b2b4b0b1059067cf0b1680f61f8b91f0',
-  repo: 'blogtalk',
-  owner: 'murentutu',
-  admin: ['murentutu'],
-  id: md5(location.pathname),
-  distractionFreeMode: false
-})
-gitalk.render('container')
-</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://murentutu.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">AI数学基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%80%8A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E3%80%8B/">《统计学习方法》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px;">测试</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">笔记</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%88%86%E6%9E%90/" style="font-size: 15px;">网络协议分析</a> <a href="/tags/little-talk/" style="font-size: 15px;">little talk</a> <a href="/tags/Docker/" style="font-size: 15px;">Docker</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/05/11/Docker-Calibre-web%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E4%B9%A6%E9%A6%86/">Docker+Calibre-web搭建个人图书馆</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/25/python%E7%88%AC%E8%99%AB03/">python爬虫03</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/22/python%E7%88%AC%E8%99%AB02/">python爬虫02</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/21/python%E7%88%AC%E8%99%AB01/">python爬虫01</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/12/01/12%E6%9C%88/">12月</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/29/%E7%BD%91%E5%8D%8F%E5%A4%8D%E4%B9%A0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">网协复习-第二章</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-Leetcode/">最大子序和-Leetcode</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/11/04/java%E7%9F%A5%E8%AF%86/">Java Set.add()方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/21/Numpy%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8/">Numpy简易入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/17/%E6%84%9F%E7%9F%A5%E6%9C%BA/">第2章 感知机</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.cnblogs.com/murentutu/" title="murentutu" target="_blank">murentutu</a><ul></ul><a href="http://duitutu.cn/" title="Du1L0v3" target="_blank">Du1L0v3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">murentutu.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+
+	
+	<span id="/2021/12/22/python%E7%88%AC%E8%99%AB02/" class="leancloud-visitors view" data-flag-title="python爬虫02">
+		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
+	</span>
+	
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+    
+    <a href="/2021/12/25/python爬虫03/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> 上一页</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2021/12/21/python爬虫01/" type="button" class="btn btn-default ">下一页<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--
+<section id="comment">
+    <h2 class="title">留言</h2>
+
+    
+</section>
+
+-->
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2021-12-22 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/笔记/">笔记<span>6</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+		
+
+	</div>
+	
+		
+
+</div><!-- row -->
+
+<!--
+ -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2022 murentutu's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
