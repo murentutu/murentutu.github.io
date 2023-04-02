@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-29T01:19:29.549Z</updated>
+  <updated>2023-03-31T06:01:44.388Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,25 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo中插入音乐和视频</title>
+    <link href="http://example.com/wiki/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E2%80%94%E2%80%94hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/"/>
+    <id>http://example.com/wiki/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E2%80%94%E2%80%94hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/</id>
+    <published>2023-03-30T09:49:30.000Z</published>
+    <updated>2023-03-31T06:01:44.388Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="一前期准备">一、前期准备</h4><p>​ 如果插入的音乐和视频是在本地存储的，则需要多进行一步。需要先把本地的音乐和视频上传到图床这一类工具上面，获取到可直接访问的网络链接。这里自己采用的是已购买的腾讯云上面的对象存储服务。这里有两种方法，一种是通过typora+PicGO+腾讯云实现自动生成链接；另一种就是直接进入腾讯云上传。</p><h4 id="二下载hexo插件">二、下载hexo插件</h4><p>可以直接使用npm安装</p><ol type="1"><li><p>hexo-tag-aplayer:https://github.com/MoePlayer/hexo-tag-aplayer</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-aplayer</span><br></pre></td></tr></table></figure></li><li><p>hexo-tag-dplayer:https://github.com/NextMoe/hexo-tag-dplayer</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-dplayer</span><br></pre></td></tr></table></figure></li></ol><h4 id="三通过aplayer在博客中插入音乐">三、通过aplayer在博客中插入音乐</h4><p>在markdown中添加如下代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer <span class="string">&quot;她的睫毛&quot;</span> <span class="string">&quot;周杰伦&quot;</span> <span class="string">&quot;http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3&quot;</span>  <span class="string">&quot;http://home.ustc.edu.cn/~mmmwhy/jay.jpg&quot;</span> %&#125;</span><br></pre></td></tr></table></figure><p>效果如下所示：         <div id="aplayer-DbQbaqjj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-DbQbaqjj"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "她的睫毛",              author: "周杰伦",              url: "http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3",              pic: "http://home.ustc.edu.cn/~mmmwhy/jay.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></p><h4 id="四通过dplayer在博客中插入视频">四、通过dplayer在博客中插入视频</h4><p>在markdown中添加如下代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">&quot;url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4&quot;</span>  <span class="string">&quot;pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg&quot;</span> <span class="string">&quot;loop=yes&quot;</span> <span class="string">&quot;theme=#FADFA3&quot;</span> <span class="string">&quot;autoplay=false&quot;</span> <span class="string">&quot;token=tokendemo&quot;</span> %&#125;</span><br></pre></td></tr></table></figure><p>效果如下所示： <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/188%E7%9A%84love%20story.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script></p><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href="https://www.jianshu.com/p/26a7fc7cc185">Hexo博客中插入音乐/视频/</a></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="博客部署" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="hexo插件" scheme="http://example.com/tags/hexo%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>秘密基地</title>
+    <link href="http://example.com/wiki/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0/"/>
+    <id>http://example.com/wiki/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0/</id>
+    <published>2023-03-30T09:33:46.000Z</published>
+    <updated>2023-03-31T06:00:56.964Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="一守护住自己的小美好">一、守护住自己的小美好</h4><p>美好的东西总是稍纵即逝的，好在我有幸在失去它的时候将它找回来。乐于和别人分享但是更害怕会再一次失去它，所以这一次我就把这个美好存在这里了。命名为秘密基地，是独有的宁静的属于自己的。</p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/188%E7%9A%84love%20story.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="自留地" scheme="http://example.com/categories/%E8%87%AA%E7%95%99%E5%9C%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>hello</title>
     <link href="http://example.com/wiki/hello/"/>
     <id>http://example.com/wiki/hello/</id>
     <published>2023-03-29T01:17:41.000Z</published>
     <updated>2023-03-29T01:19:29.549Z</updated>
     
-    <content type="html"><![CDATA[<p>这是一个测试。。。。。。。。。</p><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是一个测试。。。。。。。。。</p><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;这是一个测试。。。。。。。。。&lt;/p&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;参考资料&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
       
     
     
@@ -54,12 +93,12 @@
     <published>2023-03-28T14:45:27.397Z</published>
     <updated>2023-03-28T14:45:27.397Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
       
     
     
