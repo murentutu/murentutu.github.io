@@ -119,13 +119,6 @@
 
   
   <url>
-    <loc>http://example.com/tags/Anaconda/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/Pytorch/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -134,6 +127,13 @@
   
   <url>
     <loc>http://example.com/tags/d2l/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Anaconda/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
