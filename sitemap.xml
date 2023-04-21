@@ -126,13 +126,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/Pytorch/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -147,14 +140,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>http://example.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/hexo%E6%8F%92%E4%BB%B6/</loc>
+    <loc>http://example.com/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -169,6 +162,13 @@
   
   <url>
     <loc>http://example.com/tags/hexo/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/hexo%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
