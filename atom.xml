@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-21T08:56:24.203Z</updated>
+  <updated>2023-05-08T08:43:28.361Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>anaconda创建Django项目</title>
+    <link href="http://example.com/wiki/anaconda%E5%88%9B%E5%BB%BADjango%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://example.com/wiki/anaconda%E5%88%9B%E5%BB%BADjango%E9%A1%B9%E7%9B%AE/</id>
+    <published>2023-05-08T08:18:39.000Z</published>
+    <updated>2023-05-08T08:43:28.361Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="搭建django环境">搭建Django环境</h3><p>1.创建名为Django的环境</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda -n django python=3.9</span><br></pre></td></tr></table></figure><p>2.激活环境</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate django</span><br></pre></td></tr></table></figure><p>3.进入环境下载Django</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install django</span><br></pre></td></tr></table></figure><p>4.安装完以后退出cmd即可</p><h3 id="创建django项目">创建Django项目</h3><p>​有两种方法，一种是进入预安装目录执行对应环境（django）执行<code>django-admin startproject 项目名</code>，另一种则是使用pycharm，这里演示pycharm的创建方法。</p><p>1.进入新建项目页面</p><figure><imgsrc="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202305081627447.png"alt="image-20230508162711442" /><figcaption aria-hidden="true">image-20230508162711442</figcaption></figure><p>2.选择并修改解释器-=</p><figure><imgsrc="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202305081629091.png"alt="image-20230508162916098" /><figcaption aria-hidden="true">image-20230508162916098</figcaption></figure><p>3.选择create则创建成功。</p><h2 id="参考资料">参考资料</h2><blockquote><ul><li><ahref="https://blog.csdn.net/VirusLL/article/details/79437755">Django笔记</a></li><li><a href=""></a></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="毕业设计" scheme="http://example.com/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="Anaconda" scheme="http://example.com/tags/Anaconda/"/>
+    
+  </entry>
   
   <entry>
     <title>day1-小程序搭建以及tabBar设置</title>
