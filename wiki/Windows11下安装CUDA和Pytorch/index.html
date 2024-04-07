@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
     <meta charset="utf-8">
     
     <title>Windows11下安装CUDA和Pytorch | Hexo</title>
     
     
-        <meta name="keywords" content="Pytorch,Anaconda">
+        <meta name="keywords" content="Pytorch,Anaconda" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="确认有NVIDIA GPU以及CUDA版本 ​ 方法一：打开任务管理器，在“性能”选项下查看是否有GPU的显示。 ​ 方法二：通过“设备管理器-显示适配器”查看电脑是否有独立显卡，需要是英伟达的！ ​ 直接在桌面上右键打开“NVIDIA控制面板”，点击左下角“系统信息”，再点击“组件”查看CUDA支持版本。   image-20230403214607942  安装CUDA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows11下安装CUDA和Pytorch">
@@ -25,11 +25,11 @@
     
 
     
-        <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+        <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
     
 
     
-        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.ico" />
     
 
     
@@ -98,14 +98,14 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -153,7 +153,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -168,25 +168,25 @@
                 <aside id="sidebar">
    
         
-    <div class="widget-wrap" id="categories">
+    <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
             <span>categories</span>
             &nbsp;
-            <a id="allExpand" href="#">
+            <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
             </a>
         </h3>
         
         
         
-         <ul class="unstyled" id="tree"> 
+         <ul class="unstyled" id="tree" > 
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
                             博客部署
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/hello/">hello</a></li>  <li class="file"><a href="/wiki/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E2%80%94%E2%80%94hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/">hexo中插入音乐和视频</a></li>  <li class="file"><a href="/wiki/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0%E5%92%8C%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0/">博客的更新和网站源码的更新</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/wiki/hello/">hello</a></li>  <li class="file"><a href="/wiki/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E2%80%94%E2%80%94hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/">hexo中插入音乐和视频</a></li>  <li class="file"><a href="/wiki/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0%E5%92%8C%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0/">博客的更新和网站源码的更新</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -195,7 +195,7 @@
                             &nbsp;
                             毕业设计
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/day1-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8AtabBar%E8%AE%BE%E7%BD%AE/">day1-小程序搭建以及tabBar设置</a></li>  <li class="file"><a href="/wiki/anaconda%E5%88%9B%E5%BB%BADjango%E9%A1%B9%E7%9B%AE/">anaconda创建Django项目</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/wiki/day1-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8AtabBar%E8%AE%BE%E7%BD%AE/">day1-小程序搭建以及tabBar设置</a></li>  <li class="file"><a href="/wiki/anaconda%E5%88%9B%E5%BB%BADjango%E9%A1%B9%E7%9B%AE/">anaconda创建Django项目</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory open">
@@ -204,7 +204,7 @@
                             &nbsp;
                             毕设
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/wiki/Windows11%E4%B8%8B%E5%AE%89%E8%A3%85CUDA%E5%92%8CPytorch/">Windows11下安装CUDA和Pytorch</a></li>  <li class="file"><a href="/wiki/Anaconda%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">Anaconda基础使用及注意事项</a></li>  <li class="file"><a href="/wiki/Windows11%E4%B8%8B%E5%AE%89%E8%A3%85Anaconda/">Windows11下安装Anaconda</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/wiki/Windows11%E4%B8%8B%E5%AE%89%E8%A3%85CUDA%E5%92%8CPytorch/">Windows11下安装CUDA和Pytorch</a></li>  <li class="file"><a href="/wiki/Anaconda%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">Anaconda基础使用及注意事项</a></li>  <li class="file"><a href="/wiki/Windows11%E4%B8%8B%E5%AE%89%E8%A3%85Anaconda/">Windows11下安装Anaconda</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -213,7 +213,7 @@
                             &nbsp;
                             自留地
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0/">秘密基地</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/wiki/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0/">秘密基地</a></li>  </ul> 
                     </li> 
                      <li class="file"><a href="/wiki/hello-world/">Hello World</a></li>  <li class="file"><a href="/wiki/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%8F%B0thinkphp/">阿里云服务器部署小程序后台thinkphp</a></li>  </ul> 
     </div>
@@ -320,13 +320,13 @@
                         
                         
                             <div class="article-meta-button">
-                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/murentutu/Mysite/raw/main/source/_posts/Windows11下安装CUDA和Pytorch.md"> Source </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/murentutu/Mysite/raw/main/source/_posts/Windows11下安装CUDA和Pytorch.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/murentutu/Mysite/edit/main/source/_posts/Windows11下安装CUDA和Pytorch.md"> Edit </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/murentutu/Mysite/edit/main/source/_posts/Windows11下安装CUDA和Pytorch.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/murentutu/Mysite/commits/main/source/_posts/Windows11下安装CUDA和Pytorch.md"> History </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/murentutu/Mysite/commits/main/source/_posts/Windows11下安装CUDA和Pytorch.md'> History </a>
                             </div>
                         
                     </div>
@@ -347,8 +347,8 @@
             
                 <div id="toc" class="toc-article">
                 <strong class="toc-title">Catalogue</strong>
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A1%AE%E8%AE%A4%E6%9C%89nvidia-gpu%E4%BB%A5%E5%8F%8Acuda%E7%89%88%E6%9C%AC"><span class="toc-number">1.</span> <span class="toc-text">确认有NVIDIA GPU以及CUDA版本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85cuda"><span class="toc-number">2.</span> <span class="toc-text">安装CUDA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85cudnn"><span class="toc-number">3.</span> <span class="toc-text">安装cuDNN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85anaconda"><span class="toc-number">4.</span> <span class="toc-text">安装Anaconda</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85pytorch"><span class="toc-number">5.</span> <span class="toc-text">安装pytorch</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85d2i%E5%92%8Cjupyter"><span class="toc-number">6.</span> <span class="toc-text">安装d2I和Jupyter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDd2i%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="toc-number">7.</span> <span class="toc-text">下载d2I记事本运行测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95pytorch"><span class="toc-number">8.</span> <span class="toc-text">测试Pytorch</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number"></span> <span class="toc-text">参考资料</span></a>
-                </li></div>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A1%AE%E8%AE%A4%E6%9C%89nvidia-gpu%E4%BB%A5%E5%8F%8Acuda%E7%89%88%E6%9C%AC"><span class="toc-number">1.</span> <span class="toc-text">确认有NVIDIA GPU以及CUDA版本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85cuda"><span class="toc-number">2.</span> <span class="toc-text">安装CUDA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85cudnn"><span class="toc-number">3.</span> <span class="toc-text">安装cuDNN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85anaconda"><span class="toc-number">4.</span> <span class="toc-text">安装Anaconda</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85pytorch"><span class="toc-number">5.</span> <span class="toc-text">安装pytorch</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85d2i%E5%92%8Cjupyter"><span class="toc-number">6.</span> <span class="toc-text">安装d2I和Jupyter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDd2i%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="toc-number">7.</span> <span class="toc-text">下载d2I记事本运行测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95pytorch"><span class="toc-number">8.</span> <span class="toc-text">测试Pytorch</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number"></span> <span class="toc-text">参考资料</span></a>
+                </div>
             
         
         
@@ -359,20 +359,26 @@
 <p>​
 直接在桌面上右键打开“NVIDIA控制面板”，点击左下角“系统信息”，再点击“组件”查看CUDA支持版本。</p>
 <figure>
-<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304032146596.png" alt="image-20230403214607942">
+<img
+src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304032146596.png"
+alt="image-20230403214607942" />
 <figcaption aria-hidden="true">image-20230403214607942</figcaption>
 </figure>
 <h4 id="安装cuda">安装CUDA</h4>
 <p>​ 官网下载地址：https://developer.nvidia.com/cuda-toolkit-archive</p>
 <p>​ 考虑到C盘内存空间不是很够，所以全部安装在D盘了。</p>
 <figure>
-<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304032237285.png" alt="image-20230403223703306">
+<img
+src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304032237285.png"
+alt="image-20230403223703306" />
 <figcaption aria-hidden="true">image-20230403223703306</figcaption>
 </figure>
 <p>​ 检查CUDA是否安装成功，在cmd输入<strong><em>nvcc
 -V</em></strong>查看，如下图所示：</p>
 <figure>
-<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304032338353.png" alt="image-20230403233823954">
+<img
+src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304032338353.png"
+alt="image-20230403233823954" />
 <figcaption aria-hidden="true">image-20230403233823954</figcaption>
 </figure>
 <h4 id="安装cudnn">安装cuDNN</h4>
@@ -381,7 +387,8 @@
 <p>​
 下载并解压后将文件夹内的内容移动到CUDA的数据目录下：<strong><em>D:CorporationSamples1.0</em></strong></p>
 <h4 id="安装anaconda">安装Anaconda</h4>
-<p>​ 跳转这里--》<a target="_blank" rel="noopener" href="http://murentutu.xyz/wiki/Windows11%E4%B8%8B%E5%AE%89%E8%A3%85Anaconda/">Windows11下安装Anaconda</a></p>
+<p>​ 跳转这里--》<a
+target="_blank" rel="noopener" href="http://murentutu.xyz/wiki/Windows11%E4%B8%8B%E5%AE%89%E8%A3%85Anaconda/">Windows11下安装Anaconda</a></p>
 <h4 id="安装pytorch">安装pytorch</h4>
 <ol type="1">
 <li><p>打开<strong><em>anaconda
@@ -399,7 +406,9 @@ python=3.6</em></strong>这一步是创建了pytorch虚拟房间。</p>
 <h4 id="测试pytorch">测试Pytorch</h4>
 <p>​ 在pytorch房间进入python</p>
 <figure>
-<img src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304041043612.png" alt="image-20230404104315103">
+<img
+src="https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/202304041043612.png"
+alt="image-20230404104315103" />
 <figcaption aria-hidden="true">image-20230404104315103</figcaption>
 </figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> torch</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
@@ -407,9 +416,11 @@ python=3.6</em></strong>这一步是创建了pytorch虚拟房间。</p>
 <h2 id="参考资料">参考资料</h2>
 <blockquote>
 <ul>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.bilibili.com/video/BV18K411w7Vs/?spm_id_from=333.999.0.0&amp;vd_source=461925c02f33b1b655879d0d5113004a">Windows
+<li><a
+target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18K411w7Vs/?spm_id_from=333.999.0.0&amp;vd_source=461925c02f33b1b655879d0d5113004a">Windows
 下安装 CUDA 和 Pytorch 跑深度学习 - 动手学深度学习v2</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.csdn.net/hedgehog__/article/details/117997540">GPU版Pytorch1.6安装教程--基于Win10+MX250+CUDA10.2+cuDNN7.6.5</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://blog.csdn.net/hedgehog__/article/details/117997540">GPU版Pytorch1.6安装教程--基于Win10+MX250+CUDA10.2+cuDNN7.6.5</a></li>
 </ul>
 </blockquote>
 
@@ -461,8 +472,8 @@ python=3.6</em></strong>这一步是创建了pytorch虚拟房间。</p>
     <div class="outer">
         <div id="footer-info" class="inner">
             John Doe &copy; 2024 
-            <a rel="external nofollow noopener noreferrer" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
-            <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
             
                 <br>
                 <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
