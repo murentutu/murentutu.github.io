@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-08T03:34:32.114Z</updated>
+  <updated>2024-04-09T02:57:33.039Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>接圣经</title>
+    <link href="http://example.com/wiki/2024-04-09/"/>
+    <id>http://example.com/wiki/2024-04-09/</id>
+    <published>2024-04-09T02:54:37.097Z</published>
+    <updated>2024-04-09T02:57:33.039Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>上午和师父讨论了机房网络，我实在是太太太小白了，对于整个单位的网络一窍不通，专业性的知识也无大用，再聊到工作上面的事情，关于汇报，师父还是说要大胆些，提出以下建议：<strong>一是汇报要有条理， 二是表达清楚你的意思， 三是尽量只讲重点，四是表达出你积极的态度。</strong> 提点得非常到位，一定要认真落实！</p><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="自留地" scheme="http://example.com/categories/%E8%87%AA%E7%95%99%E5%9C%B0/"/>
+    
+    
+    <category term="日记" scheme="http://example.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可恶的社畜生活</title>
+    <link href="http://example.com/wiki/2024-04-08/"/>
+    <id>http://example.com/wiki/2024-04-08/</id>
+    <published>2024-04-08T07:49:01.091Z</published>
+    <updated>2024-04-09T02:54:30.989Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>来活来活来活！ 被主任给轻视了！ 虽然！我确实啥也不会！但是！好歹我也是科班出身！ 可恶可恶！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="自留地" scheme="http://example.com/categories/%E8%87%AA%E7%95%99%E5%9C%B0/"/>
+    
+    
+    <category term="日记" scheme="http://example.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里云服务器部署小程序后台thinkphp</title>
@@ -216,10 +264,10 @@
     <title>秘密基地</title>
     <link href="http://example.com/wiki/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0/"/>
     <id>http://example.com/wiki/%E7%A7%98%E5%AF%86%E5%9F%BA%E5%9C%B0/</id>
-    <published>2023-03-30T09:33:46.000Z</published>
-    <updated>2023-03-31T06:00:56.964Z</updated>
+    <published>2023-03-30T09:33:46.173Z</published>
+    <updated>2024-04-08T07:04:03.818Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="一守护住自己的小美好">一、守护住自己的小美好</h4><p>美好的东西总是稍纵即逝的，好在我有幸在失去它的时候将它找回来。乐于和别人分享但是更害怕会再一次失去它，所以这一次我就把这个美好存在这里了。命名为秘密基地，是独有的宁静的属于自己的。</p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/188%E7%9A%84love%20story.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="一重要资料">一、重要资料</h4><p>卡丝卡睡醒了大大的188手书-love story <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://mu-1311836296.cos.ap-nanjing.myqcloud.com/murentutu/cloudimages/188%E7%9A%84love%20story.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script></p>]]></content>
     
     
       
