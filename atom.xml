@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-09T02:57:33.039Z</updated>
+  <updated>2024-04-22T09:06:32.460Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,87 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Obsidian Git+hexo实现博客</title>
+    <link href="http://example.com/wiki/Obsidian%20Git+hexo%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/wiki/Obsidian%20Git+hexo%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2/</id>
+    <published>2024-04-22T08:59:55.461Z</published>
+    <updated>2024-04-22T09:06:32.460Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol type="1"><li><ahref="https://publish.obsidian.md/chinesehelp/01+2021%E6%96%B0%E6%95%99%E7%A8%8B/obsidian%E5%92%8CGit%E8%BF%9E%E7%94%A8%E5%AE%9E%E7%8E%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%EF%BC%88obsidian+Git%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D%EF%BC%89+by+%E8%BD%AF%E9%80%9A%E8%BE%BE">obsidianGit插件介绍</a></li><li><a href="https://segmentfault.com/a/1190000042111566">Hexo +Obsidian + Git 完美的博客部署与编辑方案</a></li><li><ahref="https://zhuanlan.zhihu.com/p/554333805">Obsidian+Git完美维护Hexo博客</a></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="博客部署" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="Obsidian" scheme="http://example.com/tags/Obsidian/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决开启代理后，UWP（Universal Windows Platform）应用无法使用的问题</title>
+    <link href="http://example.com/wiki/%E8%A7%A3%E5%86%B3%E5%BC%80%E5%90%AF%E4%BB%A3%E7%90%86%E5%90%8E%EF%BC%8CUWP%EF%BC%88Universal%20Windows%20Platform%EF%BC%89%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/wiki/%E8%A7%A3%E5%86%B3%E5%BC%80%E5%90%AF%E4%BB%A3%E7%90%86%E5%90%8E%EF%BC%8CUWP%EF%BC%88Universal%20Windows%20Platform%EF%BC%89%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2024-04-22T08:59:55.367Z</published>
+    <updated>2024-04-22T09:05:28.419Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>1、实测有效：安装Fiddler（<ahref="https://www.telerik.com/download/fiddler-everywhere%EF%BC%89">https://www.telerik.com/download/fiddler-everywhere）</a> 这款免费软件，点击左上角的<code>WinConfig</code>按钮，然后勾选想要代理的UWP软件。2、解答区：https://github.com/2dust/v2rayN/issues/1083</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="答疑存档" scheme="http://example.com/categories/%E7%AD%94%E7%96%91%E5%AD%98%E6%A1%A3/"/>
+    
+    
+    <category term="代理" scheme="http://example.com/tags/%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>更改Adobe软件默认安装路径</title>
+    <link href="http://example.com/wiki/%E6%9B%B4%E6%94%B9Adobe%E8%BD%AF%E4%BB%B6%E9%BB%98%E8%AE%A4%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84/"/>
+    <id>http://example.com/wiki/%E6%9B%B4%E6%94%B9Adobe%E8%BD%AF%E4%BB%B6%E9%BB%98%E8%AE%A4%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84/</id>
+    <published>2024-04-22T08:59:55.314Z</published>
+    <updated>2024-04-22T09:04:37.107Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="参考资料">参考资料</h2><blockquote><p><a href="https://www.jianshu.com/p/cc932cfdc844"># AdobeIllustrator/Photoshop/Animate CC安装目录修改</a></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="答疑存档" scheme="http://example.com/categories/%E7%AD%94%E7%96%91%E5%AD%98%E6%A1%A3/"/>
+    
+    
+    <category term="Adobe" scheme="http://example.com/tags/Adobe/"/>
+    
+  </entry>
+  
+  <entry>
     <title>接圣经</title>
     <link href="http://example.com/wiki/2024-04-09/"/>
     <id>http://example.com/wiki/2024-04-09/</id>
     <published>2024-04-09T02:54:37.097Z</published>
-    <updated>2024-04-09T02:57:33.039Z</updated>
+    <updated>2024-04-22T08:59:27.431Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>上午和师父讨论了机房网络，我实在是太太太小白了，对于整个单位的网络一窍不通，专业性的知识也无大用，再聊到工作上面的事情，关于汇报，师父还是说要大胆些，提出以下建议：<strong>一是汇报要有条理， 二是表达清楚你的意思， 三是尽量只讲重点，四是表达出你积极的态度。</strong> 提点得非常到位，一定要认真落实！</p><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>上午和师父讨论了机房网络，我实在是太太太小白了，对于整个单位的网络一窍不通，专业性的知识也无大用，再聊到工作上面的事情，关于汇报，师父还是说要大胆些，提出以下建议：<strong>一是汇报要有条理， 二是表达清楚你的意思， 三是尽量只讲重点，四是表达出你积极的态度。</strong> 提点得非常到位，一定要认真落实！</p>]]></content>
     
     
       
@@ -61,26 +135,6 @@
     
     
     <category term="日记" scheme="http://example.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阿里云服务器部署小程序后台thinkphp</title>
-    <link href="http://example.com/wiki/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%8F%B0thinkphp/"/>
-    <id>http://example.com/wiki/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%8F%B0thinkphp/</id>
-    <published>2023-05-09T02:37:32.000Z</published>
-    <updated>2024-04-08T03:34:32.114Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
     
   </entry>
   
@@ -278,26 +332,6 @@
     
     
     <category term="自留地" scheme="http://example.com/categories/%E8%87%AA%E7%95%99%E5%9C%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/wiki/hello-world/"/>
-    <id>http://example.com/wiki/hello-world/</id>
-    <published>2023-03-28T14:45:27.397Z</published>
-    <updated>2024-04-07T14:03:50.715Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your veryfirst post. Check <a href="https://hexo.io/docs/">documentation</a> formore info. If you get any problems when using Hexo, you can find theanswer in <ahref="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> oryou can ask me on <ahref="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
     
     
   </entry>
