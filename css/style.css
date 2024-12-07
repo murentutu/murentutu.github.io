@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300..700&display=swap");
 @-moz-keyframes show-toc-slide {
   0% {
     opacity: 0;
@@ -1384,13 +1385,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif;
   color: #1f1235;
   position: relative;
-  -webkit-user-select: none /* Safari */;
-  -ms-user-select: none /* IE 10+ and Edge */;
-  -moz-user-select: none /* Firefox */;
-  user-select: none /* Standard syntax */;
 }
 body .main {
   max-width: 1080px;
@@ -1399,7 +1396,7 @@ body .main {
 }
 body .main .main-content {
   background-color: #fff;
-  background-image: url("img/blog-background.png");
+  background-image: url("/img/blog-background.png");
   border-radius: 20px;
   margin: 0 auto;
   padding: 20px 0 40px;
@@ -1844,7 +1841,7 @@ code {
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
   padding: 0 8px;
   margin: 0 2px;
-  font-family: 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif;
   color: #50a14f;
   line-height: 1.8em;
 }
@@ -2208,7 +2205,7 @@ header {
   -webkit-flex: 1;
   -ms-flex: 1;
   font-size: 18px;
-  font-family: 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', Sans-serif, Serif;
   border: 1px solid #4e4a55;
   border-radius: 15px;
   padding: 3px 8px;
