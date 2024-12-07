@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>git+hexo报错解决方案</title>
+      <link href="/2024/12/07/git-hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>/2024/12/07/git-hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>执行hexo d命令时出现以下报错：</p><p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071717826.png" alt="image-20241207171724124"><br>解决方案如下：<a href="https://blog.csdn.net/qq_43546721/article/details/139506583">第二条设置系统代理</a>，根据自身需求开启，127.0.0.1:8890；或者设置github邮箱隐私关闭<a href="https://www.cnblogs.com/cairbin/p/14957855.html">解决hexo报错spwan failed - CairBin - 博客园</a>。本人是按照第二条更改github账号settings中的email设置后解决报错。</p></li><li><p>配置主题是遇到评论功能依赖<strong>giscus</strong>实现，主题内没有详细介绍配置方法，结合网友实现：</p><ol><li><p>公开仓库：设置评论的仓库需要设置为public；</p></li><li><p>安装giscus app：安装<a href="https://github.com/apps/giscus">giscus app</a>，直接点击安装后进行配置configure：</p><p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071733160.png" alt="image-20241207173330207"></p></li><li><p>在仓库启用Discussions：在仓库设置中开启discussions：</p><p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071735469.png" alt="image-20241207173546123"></p><p>并在Features栏目里找到Discussions勾选。</p><p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071737329.png" alt="image-20241207173659909"></p></li><li><p>配置代码：在<a href="https://giscus.app/zh-CN">giscus</a>中根据自己需求填写内容，自动生成对应代码。</p><p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071738276.png" alt="image-20241207173820466">将代码里的内容填入主题_config.yaml中的comment配置中及设置好。</p></li></ol></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2024/12/07/hello-world/"/>
       <url>/2024/12/07/hello-world/</url>

@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="author" content="John Doe"/><meta name="keyword"/><meta name="description" content="执行hexo d命令时出现以下报错： 解决方案如下：第二条设置系统代理，根据自身需求开启，127.0.0.1:8890；或者设置github邮箱隐私关闭解决hexo报错spwan failed - CairBin - 博客园。本人是按照第二条更改github账号settings中的email设置后解决报错。  配置主题是遇到评论功能依赖giscus实现，主题内没有详细介绍配置方法，结合网友实现：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git+hexo报错解决方案">
+<meta property="og:url" content="http://example.com/2024/12/07/git-hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:site_name" content="MURENTUTU">
+<meta property="og:description" content="执行hexo d命令时出现以下报错： 解决方案如下：第二条设置系统代理，根据自身需求开启，127.0.0.1:8890；或者设置github邮箱隐私关闭解决hexo报错spwan failed - CairBin - 博客园。本人是按照第二条更改github账号settings中的email设置后解决报错。  配置主题是遇到评论功能依赖giscus实现，主题内没有详细介绍配置方法，结合网友实现：">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071717826.png">
+<meta property="og:image" content="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071733160.png">
+<meta property="og:image" content="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071735469.png">
+<meta property="og:image" content="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071737329.png">
+<meta property="og:image" content="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071738276.png">
+<meta property="article:published_time" content="2024-12-07T07:00:26.000Z">
+<meta property="article:modified_time" content="2024-12-07T09:39:40.436Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071717826.png"><title>git+hexo报错解决方案 - MEOW - 可爱明亮的Hexo主题</title><link rel="shortcut icon" href="/img/site-icon.png">
+<link rel="stylesheet" href="/css/style.css" id="dm-light">
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+<meta name="generator" content="Hexo 7.3.0"></head><body><header><div class="top-nav" ondblclick="scrollToTop()"><div class="nav-info"><div class="nav-icon"><img id="nav-icon" src="/img/site-icon.png"/></div><div class="nav-title"><a id="nav-title" href="/" title="主页">MURENTUTU</a></div></div><div class="nav-ribbon"><div class="top-menu-expanded"><a class="top-menu-item" href="/archives"><span>归档</span></a><a class="top-menu-item" href="/categories"><span>分类</span></a><a class="top-menu-item" href="/tags"><span>标签</span></a><a class="top-menu-item" href="/about"><span>关于</span></a></div><div class="top-search" onclick="toggleSearchWindow()"><div id="top-search-btn" title="搜索"><i class="icon fa-solid fa-magnifying-glass"></i><span>搜索</span></div></div><div id="top-menu-btn" onclick="openTopMenu()" title="打开菜单"><i class="fa-solid fa-bars fa-lg"></i></div></div></div></header><div id="top-menu-hidden"><div class="menu-hidden-content"><div class="menu-hidden-nav"><a class="menu-hidden-item" href="/archives"><i class="fa-solid fa-box-archive fa-sm"></i><span>归档</span></a><a class="menu-hidden-item" href="/categories"><i class="fa-regular fa-folder-open fa-sm"></i><span>分类</span></a><a class="menu-hidden-item" href="/tags"><i class="fa-solid fa-tags fa-sm"></i><span>标签</span></a><a class="menu-hidden-item" href="/about"><i class="fa-solid fa-paw fa-sm"></i><span>关于</span></a></div></div><div class="menu-hidden-blank" onclick="closeTopMenu()"></div></div>
+<div class="blog-info"><div class="blog-pic"><img id="blog-pic" src="/img/site-icon.png"/></div><div class="blog-title"><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i><span>MEOW</span><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i></div><div class="blog-desc">Hexo主题「Meow」展示站。本主题尤其适用于发布原创小说、同人二创等文学作品。</div></div><div class="main"><div class="main-content"><article class="post"><div class="post-title"><h1><i class="fa-solid fa-paw"></i>git+hexo报错解决方案</h1></div><div class="post-info"><div class="post-info-first-line"><div class="post-date"><i class="icon fa-regular fa-calendar-plus" title="发布日期"></i><time class="publish-time">2024-12-07</time><i class="icon fa-regular fa-calendar-check" title="更新日期"></i><time class="update-time">2024-12-07</time></div>
+
+<div class="post-tags"><i class="icon fa-solid fa-tags" title="标签"></i><a class="post-tag" href="/tags/git/">git</a></div></div><div class="post-info-second-line"><div class="post-copyright"><i class="icon fa-brands fa-creative-commons" title="版权声明"></i><span>版权声明: </span><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" title="CC BY-NC-ND 4.0">署名-非商业性使用-禁止演绎 4.0</a></div>
+<div class="post-word-count"><i class="icon fa-solid fa-pen-to-square"></i><span>全文约0.2K字</span></div><div class="pageview-post"><i class="icon fa-regular fa-eye"></i><span id="busuanzi_container_page_pv">阅读次数: <span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner"></i></span></span></div></div></div><div class="post-content"><ol>
+<li><p>执行hexo d命令时出现以下报错：</p>
+<p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071717826.png" alt="image-20241207171724124"><br>解决方案如下：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43546721/article/details/139506583">第二条设置系统代理</a>，根据自身需求开启，127.0.0.1:8890；或者设置github邮箱隐私关闭<a target="_blank" rel="noopener" href="https://www.cnblogs.com/cairbin/p/14957855.html">解决hexo报错spwan failed - CairBin - 博客园</a>。本人是按照第二条更改github账号settings中的email设置后解决报错。</p>
+</li>
+<li><p>配置主题是遇到评论功能依赖<strong>giscus</strong>实现，主题内没有详细介绍配置方法，结合网友实现：</p>
+<ol>
+<li><p>公开仓库：设置评论的仓库需要设置为public；</p>
+</li>
+<li><p>安装giscus app：安装<a target="_blank" rel="noopener" href="https://github.com/apps/giscus">giscus app</a>，直接点击安装后进行配置configure：</p>
+<p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071733160.png" alt="image-20241207173330207"></p>
+</li>
+<li><p>在仓库启用Discussions：在仓库设置中开启discussions：</p>
+<p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071735469.png" alt="image-20241207173546123"></p>
+<p>并在Features栏目里找到Discussions勾选。</p>
+<p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071737329.png" alt="image-20241207173659909"></p>
+</li>
+<li><p>配置代码：在<a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">giscus</a>中根据自己需求填写内容，自动生成对应代码。</p>
+<p><img src="https://obsidian-1311836296.cos.ap-nanjing.myqcloud.com/ObsidianNote/Obsidian-202412071738276.png" alt="image-20241207173820466">将代码里的内容填入主题_config.yaml中的comment配置中及设置好。</p>
+</li>
+</ol>
+</li>
+</ol>
+</div><div class="post-end"><div class="post-prev"></div><div class="post-reward" onclick="openPostReward()" title="赞赏"><i class="fa-regular fa-thumbs-up fa-xl fa-beat-fade"></i></div><div id="reward-panel" onclick="closePostReward()"><div class="reward-container"><p>如果您喜欢这篇文章，欢迎赞赏支持作者，谢谢&#128151;</p>
+<div class="reward-nav"><div class="reward-item"><img class="reward-img" src="/img/reward/wechat.jpg" title="Wechat" alt="Wechat"/><span>Wechat</span></div><div class="reward-item"><img class="reward-img" src="/img/reward/alipay.jpg" title="Alipay" alt="Alipay"/><span>Alipay</span></div></div></div></div><div class="post-next"><a href="/2024/12/07/hello-world/" title="下一篇文章"><i class="fa-solid fa-chevron-right fa-lg"></i></a></div></div></article><div class="comment" id="comment"><script src="https://giscus.app/client.js" data-repo="murentutu/murentutu.github.io" data-repo-id="R_kgDOLq_J9g" data-category="Announcements" data-category-id="DIC_kwDOLq_J9s4Ck_2Q" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async="async"></script></div><div id="post-toc"><aside class="toc-aside"><div class="toc-title"><span><i class="fa-solid fa-paw"></i>目录</span></div><div class="toc-container" id="toc-body"></div></aside><div class="toc-blank" onclick="tocToggle()"></div></div></div></div><div id="tool-bar"><div id="tool-bar-main"><div id="tool-toggle" onclick="toolToggle()" title="设置"><i class="fa-solid fa-gear"></i></div><div id="toc-toggle" onclick="tocToggle()" title="目录"><i class="fa-solid fa-list-ul"></i></div><div id="go-to-comment" onclick="gotoComment()" title="评论"><i class="fa-regular fa-message fa-flip-horizontal"></i></div><div id="back-to-top" onclick="scrollToTop()" title="返回顶部"><i class="fa-solid fa-chevron-up"></i></div></div><div id="tool-bar-more" style="display: none;"><div id="darkmode-switch" onclick="darkmodeSwitch()" title="深色模式"><i class="fa-solid fa-circle-half-stroke"></i></div><div id="font-size-increase" onclick="fontSizeIncrease()" title="放大字体"><i class="fa-solid fa-plus"></i></div><div id="font-size-decrease" onclick="fontSizeDecrease()" title="缩小字体"><i class="fa-solid fa-minus"></i></div></div></div><div id="search-panel"><div class="search-container"><div class="search-head"><div class="search-title"><span><i class="fa-solid fa-paw"></i>搜索</span></div><div class="search-close-btn" onclick="toggleSearchWindow()"><i class="fa-regular fa-circle-xmark"></i></div></div><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="search-input" type="text" placeholder="请输入需要搜索的内容……" value=""/></div><div class="search-body"><div id="search-count">匹配结果数: </div><div id="search-result"></div><div id="search-result-empty">未搜索到匹配的文章。</div></div></div></div><footer><div class="footer-content"><div class="copyright-info"><i class="fa-regular fa-copyright fa-xs"></i><span>2024 </span><a href="/about">John Doe</a><i class="fa-solid fa-cat fa-sm"></i><span>Powered by </span><a href="https://hexo.io/" target="_blank">Hexo</a><span> &amp; </span><a href="https://github.com/chanwj/hexo-theme-meow" target="_blank" title="v2.1.0">Theme Meow</a></div><div class="pageview-site"><span id="busuanzi_container_site_pv">总访问量 : <span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner"></i></span></span><span id="busuanzi_container_site_uv">总访客数 : <span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner"></i></span></span></div></div></footer>
+<script>const GLOBAL_CONFIG = {
+  comment: { theme: 'light'}
+}
+</script>
+<script src="/js/third-party/darkmode.js"></script>
+<script>var options = {
+  dark: '/css/darkmode.css',
+  startAt: '24:00',
+  endAt: '06:00',
+  checkSystemScheme: 'false',
+  saveOnToggle: 'true'
+};
+var darkMode = new DarkMode(options);
+// change comment theme synchronously 同步修改评论区主题
+if (darkMode.getMode() == "dark" && (true || true)) {
+  if (document.getElementById('comment')) {
+    document.getElementById('comment').getElementsByTagName('script')[0].setAttribute('data-theme', 'noborder_dark');
+  }
+}
+</script><script>if (localStorage.getItem('font-size')) {
+  document.querySelector('.post-content').style.fontSize = localStorage.getItem('font-size') + 'px';
+}
+</script>
+<script src="/js/theme/tool-bar.js"></script>
+
+
+<script src="/js/theme/menu.js"></script>
+
+
+<script src="/js/third-party/clipboard.min.js"></script>
+
+
+<script src="/js/theme/copy.js"></script>
+<script>copyCode();
+</script>
+<script src="/js/theme/reward.js"></script>
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+
+
+<script src="/js/theme/search.js"></script>
+<script>searchFunc('/search.xml', 'search-input', 'search-result');
+</script></body></html>
